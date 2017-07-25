@@ -19,5 +19,6 @@
   "bugs": {
     "url": "https://github.com/europeancastle/workflow-theme/issues"
   },
-  "homepage": "https://github.com/europeancastle/workflow-theme#readme"
+  "homepage": "https://github.com/europeancastle/workflow-theme#readme",
+  "devDependencies": {}
 }
