@@ -1,0 +1,17 @@
+﻿//
+// 面板
+//
+
+@import "variables.less";
+@import "mixins.less";
+
+.panel {
+    margin: @panel-margin;
+    padding: @panel-padding;
+    border: @panel-border;
+    border-radius: @panel-border-radius;
+    background-color: @panel-bg;
+    .box-shadow(0 1px 1px rgba(0, 0, 0, .05));
+    font-size: @panel-font-size;
+    font-weight: bold;
+}

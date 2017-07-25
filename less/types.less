@@ -1,0 +1,55 @@
+﻿//
+// 排版
+//
+
+@import "variables.less";
+@import "mixins.less";
+
+// 小号字符
+small,
+.small {
+    margin: 0 @component-margin;
+    color: @component-color;
+    font-size: @font-size-small;
+}
+
+// 文本对齐
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.text-nowrap {
+    white-space: nowrap;
+}
+
+.page-header {
+    padding: @page-header-padding;
+    border-bottom: @page-header-border-bottom;
+    font-size: @page-header-font-size;
+
+    > img {
+        .icon(32px, 0 0.5em)
+    }
+
+    > a {
+        float: right;
+        color: @primary;
+    }
+
+    & + .table,
+    & + .list-group {
+        margin-top: 20px;
+    }
+}

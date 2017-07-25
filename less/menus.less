@@ -1,0 +1,44 @@
+//
+// ²Ëµ¥
+// 
+
+@import "variables.less";
+@import "mixins.less";
+
+.menu {
+    position: absolute;
+    top: 0;
+    height: @menu-height;
+    width: @menu-width;
+    margin-left: @menu-margin-left;
+    color: @menu-color;
+    background-color: @menu-bg;
+    .box-shadow(@menu-box-shadow);
+}
+
+.menu-header {
+    height: @menu-header-height;
+    border-bottom: @menu-header-border;
+    margin-bottom: @menu-header-bottom-margin;
+}
+
+.menu-item {
+    display: block;
+    color: @menu-item-color;
+    padding: @menu-item-padding;
+
+    &:hover,
+    &:focus,
+    &.active,
+    &.active:hover,
+    &.active:focus {
+        color: @menu-item-hover-color;
+        background-color: @menu-item-hover-bg;
+        text-decoration: none;
+    }
+
+    > img {
+        .icon;
+        margin: 0 1em;
+    }
+}

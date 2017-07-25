@@ -1,0 +1,147 @@
+﻿//
+// 表单
+//
+
+@import "variables.less";
+@import "mixins.less";
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+}
+
+select {
+    > option {
+        padding: .5em 1em;
+    }
+}
+
+.form-inline {
+    .clearfix;
+
+    .form-group {
+        display: inline-block;
+        vertical-align: middle;
+        padding: @form-group-padding 0 0 @form-group-padding;
+
+        > input,
+        > select {
+            height: 32px;
+        }
+
+        > button {
+            height: 30px;
+        }
+
+        > select {
+            width: 160px;
+        }
+
+        > input[type="date"] {
+            width: 160px;
+        }
+
+        > input[type="search"] {
+            width: 250px;
+        }
+
+        > button[type="submit"] {
+            margin: 0;
+            padding: 0 1em;
+        }
+
+        &:first-child {
+            padding: @form-group-padding 0 0 0;
+        }
+
+
+        > .btn {
+            margin: 0 20px 0 0;
+        }
+
+        > input + button {
+            margin-left: 5px;
+        }
+
+        > .form-label + select,
+        > .form-label + input {
+            margin-left: 10px;
+        }
+    }
+
+    > input[type="date"] {
+        display: inline-block;
+        vertical-align: middle;
+        width: @form-inline-input-date-width;
+    }
+
+    & + .table,
+    & + .list-group {
+        margin-top: 20px;
+    }
+}
+
+.form-group {
+    padding: @form-group-padding 0 0 0;
+    .clearfix;
+
+    > img {
+        .icon(24px, 0 5px);
+    }
+
+    > .btn {
+        margin: 0 20px 0 0;
+    }
+}
+
+.form-label {
+    display: inline-block;
+    padding: @form-label-padding;
+    color: @form-label-color;
+}
+
+.form-control {
+    padding: @form-control-padding;
+    border: @form-control-border;
+    color: @form-control-color;
+
+    &:focus {
+        border-color: @form-control-focus-border-color;
+        .focus(@form-control-focus-border-color);
+    }
+
+    &[disabled],
+    &[readonly],
+    fieldset[disabled] & {
+        background-color: @form-control-disabled-bg;
+    }
+
+    &[disabled],
+    fieldset[disabled] & {
+        cursor: not-allowed;
+    }
+}
+
+.form-help-block {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: @form-help-block-color;
+    font-size: @form-help-blokc-font-size;
+}
+
+.form-success {
+    .form-control-validation(@form-success-border-color; @form-success-color; @form-success-bg);
+}
+
+.form-warning {
+    .form-control-validation(@form-warning-border-color; @form-warning-color; @form-warning-bg);
+}
+
+.form-error {
+    .form-control-validation(@form-error-border-color; @form-error-color; @form-error-bg);
+}

@@ -1,0 +1,78 @@
+﻿//
+// 分页
+//
+
+@import "variables.less";
+@import "mixins.less";
+
+.pagination {
+    display: block;
+    margin: @pagination-margin;
+    border-radius: @pagination-border-radius;
+    .clearfix;
+
+    > li {
+        display: block;
+        float: left;
+
+        &:first-child {
+            > a,
+            > button,
+            > span {
+                .border-left-radius(@pagination-border-radius);
+            }
+        }
+
+        &:last-child {
+            > a,
+            > button,
+            > span {
+                .border-right-radius(@pagination-border-radius);
+            }
+        }
+
+        > a,
+        > button,
+        > span {
+            display: block;
+            margin-left: -1px;
+            padding: @pagination-padding;
+            border: @pagination-border;
+            color: @pagination-color;
+            background: @pagination-bg;
+            line-height: @pagination-line-height;
+            text-decoration: none;
+
+            &:hover,
+            &:focus {
+                background: @pagination-hover-bg;
+            }
+        }
+
+        &.active {
+            > a,
+            > button,
+            > span {
+                &,
+                &:hover,
+                &:focus {
+                    border: @pagination-activate-border;
+                    color: @pagination-activate-color;
+                    background: @pagination-activate-bg;
+                    cursor: default;
+                }
+            }
+        }
+
+        &.disabled > a,
+        &.disabled > button,
+        &.disabled > span {
+            &,
+            &:hover,
+            &:focus {
+                background: @pagination-disabled-bg;
+                cursor: not-allowed;
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+//
+// πÿ±’Õº±Í
+//
+
+@import "variables.less";
+@import "mixins.less";
+
+.close {
+    float: right;
+    color: @close-color;
+    text-shadow: @close-text-shadow;
+    line-height: 2;
+    font-size: (@font-size-base * 1.5);
+    font-weight: @close-font-weight;
+    .opacity(.2);
+
+    &:hover,
+    &:focus {
+        color: @close-color;
+        text-decoration: none;
+        cursor: pointer;
+        .opacity(.5);
+    }
+
+    button& {
+        padding: 0;
+        border: 0;
+        background: transparent;
+        cursor: pointer;
+        -webkit-appearance: none;
+    }
+}

@@ -1,0 +1,66 @@
+// ÁÐ±í×é
+
+@import "variables.less";
+@import "mixins.less";
+
+
+.list-group {
+    .list-group-item {
+        position: relative;
+        display: block;
+        margin-bottom: -1px;
+        border: @list-group-border;
+        background-color: @list-group-bg;
+
+        &:first-child {
+            .border-top-radius(5px);
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+            .border-bottom-radius(5px);
+        }
+
+        > ul {
+            display: table;
+            table-layout: fixed;
+            width: 100%;
+
+            > li {
+                display: table-cell;
+                padding: @list-group-padding;
+                color: @lisg-group-color;
+                text-align: center;
+                vertical-align: middle;
+                .text-overflow;
+
+                &:not(:last-child) {
+                    border-right: @list-group-border;
+                }
+            }
+        }
+
+        .list-group-item-heading {
+            > li {
+                color: @list-group-item-heading-color;
+            }
+        }
+
+        &.a:hover li,
+        &.a:focus li {
+        }
+    }
+
+    a.list-group-item {
+        :hover li,
+        :focus li {
+            color: @list-group-item-hover-color;
+            text-decoration: none;
+        }
+    }
+
+    button.list-group-item {
+        width: 100%;
+        text-align: left;
+    }
+}

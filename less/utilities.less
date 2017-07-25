@@ -1,0 +1,38 @@
+﻿//
+// 工具类
+//
+
+@import "variables.less";
+@import "mixins.less";
+
+// 浮动
+
+.clearfix {
+    .clearfix();
+}
+
+.center-block {
+    .center-block();
+}
+
+.pull-right {
+    float: right !important;
+
+    &.form-group {
+        padding: @form-group-padding 0 0 @form-group-padding;
+    }
+}
+
+.pull-left {
+    float: left !important;
+}
+
+// 隐藏
+.hidden {
+    display: none !important;
+}
+
+// 固定
+.affix {
+    position: fixed;
+}

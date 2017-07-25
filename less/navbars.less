@@ -1,0 +1,62 @@
+﻿//
+// 导航栏
+//
+
+@import "variables.less";
+@import "mixins.less";
+
+.navbar {
+    height: @navbar-height;
+    min-width: @navbar-min-width;
+    margin-bottom: @navbar-margin-bottom;
+    color: @navbar-color;
+    background: @navbar-bg;
+    .clearfix;
+}
+
+.navbar-brand {
+    float: left;
+    height: 100%;
+    width: @navbar-brand-width;
+    margin-left: @navbar-brand-margin-left;
+    line-height: @navbar-brand-line-height;
+    background: @navbar-brand-bg;
+    text-align: center;
+
+    > img {
+        .icon(32px, 0);
+    }
+}
+
+.navbar-nav {
+    float: left;
+    margin-left: @navbar-nav-margin-left;
+    line-height: @navbar-nav-line-width;
+    color: @navbar-nav-color;
+    .clearfix;
+
+    > li {
+        float: left;
+        display: block;
+        height: @navbar-height;
+        padding: @navbar-nav-padding;
+
+        &:nth-child(2) > img {
+            .icon(16px, 0);
+        }
+
+        > a > img,
+        > img {
+            .icon(24px, 0);
+        }
+    }
+}
+
+.navbar-text {
+    padding: @navbar-text-padding;
+    border-left: @navbar-text-border;
+
+    > span:first-child {
+        margin-right: 20px;
+    }
+}

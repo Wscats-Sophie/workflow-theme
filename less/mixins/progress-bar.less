@@ -1,0 +1,11 @@
+// ½ø¶ÈÀ¸
+
+@import "gradients.less";
+
+.progress-bar-variant(@color) {
+    background-color: @color;
+
+    .progress-striped & {
+        #gradient > .striped();
+    }
+}

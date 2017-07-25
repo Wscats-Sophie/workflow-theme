@@ -1,0 +1,65 @@
+//
+// 按钮变化
+//
+
+// 激活、悬停、焦点、禁用
+.button-variant(@border; @color; @background) {
+    border:  @border;
+    color: @color;
+    background: @background;
+
+    &:focus,
+    &.focus {
+        color: @color;
+        background: @background;
+    }
+
+    &:hover {
+        color: @color;
+        background: @background;
+    }
+
+    &:active,
+    &.active,
+    .open > .dropdown-toggle& {
+        color: @color;
+        background: darken(@background, 10%);
+
+        &:hover,
+        &:focus,
+        &.focus {
+            color: @color;
+            background: darken(@background, 17%);
+        }
+    }
+
+    &:active,
+    &.active,
+    .open > .dropdown-toggle& {
+        background-image: none;
+    }
+
+    &.disabled,
+    &[disabled],
+    fieldset[disabled] & {
+        &:hover,
+        &:focus,
+        &.focus {
+            border: @border;
+            background: @background;
+        }
+    }
+
+    .badge {
+        color: @background;
+        background: @color;
+    }
+}
+
+// 按钮大小
+.button-size(@padding; @border-radius; @font-size; @line-height) {
+    padding: @padding;
+    border-radius: @border-radius;
+    font-size: @font-size;
+    line-height: @line-height;
+}

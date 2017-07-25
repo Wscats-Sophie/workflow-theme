@@ -1,0 +1,58 @@
+﻿//
+// 选项卡
+//
+
+@import "variables.less";
+@import "mixins.less";
+
+.tab {
+    position: absolute;
+    top: 0px;
+    left: @tab-left;
+    margin: @tab-margin;
+    min-width: @tab-min-width;
+    width: @tab-width;
+}
+
+.tab-header {
+    height: @tab-header-height;
+    margin-left: @tab-header-margin-left;
+    .clearfix;
+}
+
+.tab-header-item {
+    float: left;
+    height: 100%;
+
+    > a {
+        display: block;
+        padding: @tab-header-item-padding;
+        height: inherit;
+        border-bottom: @tab-header-item-border-bottom;
+        color: @tab-header-item-color;
+        background: @tab-header-item-bg;
+        font-size: @tab-header-item-font-size;
+        line-height: @tab-header-item-line-height;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    &.active > a,
+    &:hover > a,
+    &:focus > a {
+        border-bottom: @tab-header-item-active-border-bottom;
+        color: @tab-header-item-active-color;
+    }
+}
+
+.tab-content {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    height: @tab-content-height;
+    margin-top: @tab-content-margin-top;
+    padding: @tab-content-padding;
+    border-radius: @tab-border-radius;
+    background: @tab-content-bg;
+    overflow-x: auto;
+}

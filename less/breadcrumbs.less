@@ -1,0 +1,27 @@
+//
+// Ãæ°üÐ¼
+//
+
+@import "variables.less";
+@import "mixins.less";
+
+.breadcrumb {
+    padding: 0 2em;
+
+    > li {
+        display: inline-block;
+        height: 45px;
+        line-height: 3;
+        
+
+        + li:before {
+            padding: 0 5px;
+            color: rebeccapurple;
+            content: "/\00a0";
+        }
+    }
+
+    > .active {
+        color: @breadcrumb-active-color;
+    }
+}
