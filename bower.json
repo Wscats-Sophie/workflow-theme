@@ -1,0 +1,20 @@
+{
+  "name": "workflow-theme",
+  "homepage": "https://github.com/europeancastle/workflow-theme",
+  "authors": [
+    "yu jinxian"
+  ],
+  "description": "lzzy for a workflow theme web project.",
+  "main": "less/workflow-theme.less",
+  "keywords": [
+    "workflow"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
