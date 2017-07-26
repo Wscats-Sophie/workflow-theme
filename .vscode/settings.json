@@ -3,5 +3,7 @@
     "files.autoSave": "afterDelay",
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
-    "workbench.colorTheme": "Default Dark+"
+    "workbench.colorTheme": "Default Dark+",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true
 }
