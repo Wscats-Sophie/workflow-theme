@@ -5,5 +5,5 @@
     "git.confirmSync": false,
     "workbench.colorTheme": "Default Dark+",
     "editor.formatOnSave": true,
-    "editor.formatOnPaste": true
+    "html.format.extraLiners": ""
 }
