@@ -3,7 +3,13 @@
     "files.autoSave": "afterDelay",
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
-    "workbench.colorTheme": "Default Dark+",
+    "workbench.colorTheme": "Default Light+",
     "editor.formatOnSave": true,
-    "html.format.extraLiners": ""
+    "html.format.extraLiners": "",
+    "explorer.openEditors.visible": 0,
+    "less.compile": {
+        "compress": false,
+        "sourceMap": true,
+        "out": "../dist/css/workflow-theme"
+    }
 }
