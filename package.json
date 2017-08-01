@@ -20,5 +20,7 @@
     "url": "https://github.com/europeancastle/workflow-theme/issues"
   },
   "homepage": "https://github.com/europeancastle/workflow-theme#readme",
-  "devDependencies": {}
+  "devDependencies": {
+    "grunt": "^1.0.1"
+  }
 }

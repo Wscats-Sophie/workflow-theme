@@ -3,7 +3,7 @@
     "files.autoSave": "afterDelay",
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
-    "workbench.colorTheme": "Default Light+",
+    "workbench.colorTheme": "Default Dark+",
     "editor.formatOnSave": true,
     "html.format.extraLiners": "",
     "explorer.openEditors.visible": 0,
