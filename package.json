@@ -21,6 +21,9 @@
   },
   "homepage": "https://github.com/europeancastle/workflow-theme#readme",
   "devDependencies": {
-    "grunt": "^1.0.1"
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-uglify": "^3.0.1"
   }
 }

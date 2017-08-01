@@ -9,7 +9,8 @@
     "explorer.openEditors.visible": 0,
     "less.compile": {
         "compress": false,
-        "sourceMap": true,
+        "sourceMap": false,
         "out": "../dist/css/workflow-theme"
-    }
+    },
+    "editor.minimap.enabled": false
 }
