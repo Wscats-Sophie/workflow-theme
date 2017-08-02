@@ -7,6 +7,8 @@
     "editor.formatOnSave": true,
     "html.format.extraLiners": "",
     "explorer.openEditors.visible": 0,
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.iconTheme": "vs-seti",
     "less.compile": {
         "compress": false,
         "sourceMap": false,

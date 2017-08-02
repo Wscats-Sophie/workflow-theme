@@ -1,0 +1,8 @@
+ section {
+     width: 1280px;
+     margin: auto auto 20px;
+     padding: 20px;
+     border: thin solid lightgray;
+     border-radius: 5px;
+     background: white;
+ }
