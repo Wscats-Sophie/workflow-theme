@@ -1,10 +1,8 @@
 ﻿//
 // 表单
 //
-
 @import "variables.less";
 @import "mixins.less";
-
 input[type="text"],
 input[type="password"],
 input[type="date"],
@@ -15,72 +13,51 @@ textarea {
 }
 
 select {
-    > option {
+    >option {
         padding: .5em 1em;
     }
 }
 
 .form-inline {
     .clearfix;
-
     .form-group {
         display: inline-block;
         vertical-align: middle;
         padding: @form-group-padding 0 0 @form-group-padding;
-
-        > input,
-        > select {
+        input,
+        select,
+        button {
             height: 32px;
         }
-
-        > button {
-            height: 30px;
+        input,
+        select {
+            display: inline-block;
+            vertical-align: middle;
+            width: @form-inline-input-date-width;
         }
-
-        > select {
-            width: 160px;
-        }
-
-        > input[type="date"] {
-            width: 160px;
-        }
-
-        > input[type="search"] {
+        input[type="search"] {
             width: 250px;
         }
-
-        > button[type="submit"] {
+        button[type="submit"] {
             margin: 0;
             padding: 0 1em;
         }
-
         &:first-child {
             padding: @form-group-padding 0 0 0;
         }
-
-
-        > .btn {
+        >.btn {
             margin: 0 20px 0 0;
         }
-
-        > input + button {
+        input+button {
             margin-left: 5px;
         }
-
-        > .form-label + select,
-        > .form-label + input {
-            margin-left: 10px;
+        .form-label+select,
+        .form-label+input {
+            margin-left: 1em;
         }
     }
-
-    > input[type="date"] {
-        display: inline-block;
-        vertical-align: middle;
-        width: @form-inline-input-date-width;
-    }
-
-    & + .table,
-    & + .list-group {
+    &+.table,
+    &+.list-group {
         margin-top: 20px;
     }
 }
@@ -88,12 +65,10 @@ select {
 .form-group {
     padding: @form-group-padding 0 0 0;
     .clearfix;
-
-    > img {
+    img {
         .icon(24px, 0 5px);
     }
-
-    > .btn {
+    .btn {
         margin: 0 20px 0 0;
     }
 }
@@ -108,18 +83,15 @@ select {
     padding: @form-control-padding;
     border: @form-control-border;
     color: @form-control-color;
-
     &:focus {
         border-color: @form-control-focus-border-color;
         .focus(@form-control-focus-border-color);
     }
-
     &[disabled],
     &[readonly],
     fieldset[disabled] & {
         background-color: @form-control-disabled-bg;
     }
-
     &[disabled],
     fieldset[disabled] & {
         cursor: not-allowed;
@@ -135,13 +107,19 @@ select {
 }
 
 .form-success {
-    .form-control-validation(@form-success-border-color; @form-success-color; @form-success-bg);
+    .form-control-validation(@form-success-border-color;
+    @form-success-color;
+    @form-success-bg);
 }
 
 .form-warning {
-    .form-control-validation(@form-warning-border-color; @form-warning-color; @form-warning-bg);
+    .form-control-validation(@form-warning-border-color;
+    @form-warning-color;
+    @form-warning-bg);
 }
 
 .form-error {
-    .form-control-validation(@form-error-border-color; @form-error-color; @form-error-bg);
+    .form-control-validation(@form-error-border-color;
+    @form-error-color;
+    @form-error-bg);
 }

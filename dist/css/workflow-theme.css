@@ -1,12 +1,7 @@
 @charset "uft-8";
 /*!
-<<<<<<< HEAD
- * Workflow-theme v1.0.4 beta
- * 基于 Bootstrap v3.3.6 (http://getbootstrap.com) 修改
-=======
- * Workflow-theme v1.0.4
+ * Workflow-theme v1.0.6
  * 基于 Bootstrap v3.3.7 (http://getbootstrap.com) 修改
->>>>>>> dev
  * Copyright 2017 NNCQ, Inc.
  * 许可 MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
@@ -811,23 +806,21 @@ select > option {
   vertical-align: middle;
   padding: 20px 0 0 20px;
 }
-.form-inline .form-group > input,
-.form-inline .form-group > select {
+.form-inline .form-group input,
+.form-inline .form-group select,
+.form-inline .form-group button {
   height: 32px;
 }
-.form-inline .form-group > button {
-  height: 30px;
+.form-inline .form-group input,
+.form-inline .form-group select {
+  display: inline-block;
+  vertical-align: middle;
+  width: 255px;
 }
-.form-inline .form-group > select {
-  width: 160px;
-}
-.form-inline .form-group > input[type="date"] {
-  width: 160px;
-}
-.form-inline .form-group > input[type="search"] {
+.form-inline .form-group input[type="search"] {
   width: 250px;
 }
-.form-inline .form-group > button[type="submit"] {
+.form-inline .form-group button[type="submit"] {
   margin: 0;
   padding: 0 1em;
 }
@@ -837,17 +830,12 @@ select > option {
 .form-inline .form-group > .btn {
   margin: 0 20px 0 0;
 }
-.form-inline .form-group > input + button {
+.form-inline .form-group input + button {
   margin-left: 5px;
 }
-.form-inline .form-group > .form-label + select,
-.form-inline .form-group > .form-label + input {
-  margin-left: 10px;
-}
-.form-inline > input[type="date"] {
-  display: inline-block;
-  vertical-align: middle;
-  width: 255px;
+.form-inline .form-group .form-label + select,
+.form-inline .form-group .form-label + input {
+  margin-left: 1em;
 }
 .form-inline + .table,
 .form-inline + .list-group {
@@ -872,12 +860,12 @@ select > option {
 .form-group:after {
   clear: both;
 }
-.form-group > img {
+.form-group img {
   width: 24px;
   height: 24px;
   margin: 0 5px;
 }
-.form-group > .btn {
+.form-group .btn {
   margin: 0 20px 0 0;
 }
 .form-label {
@@ -1968,6 +1956,134 @@ button.close {
   cursor: pointer;
   -webkit-appearance: none;
 }
+.caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px solid dashed;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+}
+.dropup,
+.dropdown {
+  position: relative;
+}
+.dropdown-toggle:focus {
+  outline: 0;
+}
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  list-style: none;
+  font-size: 14px;
+  text-align: left;
+  background-color: #ffffff;
+  border: thin solid #eeeeee;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  background-clip: padding-box;
+}
+.dropdown-menu.pull-right {
+  right: 0;
+  left: auto;
+}
+.dropdown-menu .divider {
+  height: 1px;
+  margin: 8.5px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
+.dropdown-menu > li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.428;
+  color: #333333;
+  white-space: nowrap;
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  text-decoration: none;
+  color: #262626;
+  background-color: #f5f5f5;
+}
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+  color: #333333;
+  text-decoration: none;
+  outline: 0;
+  background-color: #eeeeee;
+}
+.dropdown-menu > .disabled > a,
+.dropdown-menu > .disabled > a:hover,
+.dropdown-menu > .disabled > a:focus {
+  color: #999999;
+}
+.dropdown-menu > .disabled > a:hover,
+.dropdown-menu > .disabled > a:focus {
+  text-decoration: none;
+  background-color: transparent;
+  background-image: none;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  cursor: not-allowed;
+}
+.open > .dropdown-menu {
+  display: block;
+}
+.open > a {
+  outline: 0;
+}
+.dropdown-menu-right {
+  left: auto;
+  right: 0;
+}
+.dropdown-menu-left {
+  left: 0;
+  right: auto;
+}
+.dropdown-header {
+  display: block;
+  padding: 3px 20px;
+  font-size: 12px;
+  line-height: 1.428;
+  color: #999999;
+  white-space: nowrap;
+}
+.dropdown-backdrop {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 990;
+}
+.pull-right > .dropdown-menu {
+  right: 0;
+  left: auto;
+}
+.dropup .caret,
+.navbar-fixed-bottom .dropdown .caret {
+  border-top: 0;
+  border-bottom: 4px dashed;
+  content: "";
+}
+.dropup .dropdown-menu,
+.navbar-fixed-bottom .dropdown .dropdown-menu {
+  top: auto;
+  bottom: 100%;
+  margin-bottom: 2px;
+}
 .datepicker {
   direction: ltr;
 }
@@ -2071,24 +2187,23 @@ button.close {
   cursor: default;
 }
 .datepicker table tr td.highlighted {
-  border: #000;
-  color: #bbbbbb;
+  border: #bbbbbb;
+  color: #000;
   background: #eeeeee;
-  border-radius: 0;
 }
 .datepicker table tr td.highlighted:focus,
 .datepicker table tr td.highlighted.focus {
-  color: #bbbbbb;
+  color: #000;
   background: #eeeeee;
 }
 .datepicker table tr td.highlighted:hover {
-  color: #bbbbbb;
+  color: #000;
   background: #eeeeee;
 }
 .datepicker table tr td.highlighted:active,
 .datepicker table tr td.highlighted.active,
 .open > .dropdown-toggle.datepicker table tr td.highlighted {
-  color: #bbbbbb;
+  color: #000;
   background: #d5d5d5;
 }
 .datepicker table tr td.highlighted:active:hover,
@@ -2100,7 +2215,7 @@ button.close {
 .datepicker table tr td.highlighted:active.focus,
 .datepicker table tr td.highlighted.active.focus,
 .open > .dropdown-toggle.datepicker table tr td.highlighted.focus {
-  color: #bbbbbb;
+  color: #000;
   background: #c3c3c3;
 }
 .datepicker table tr td.highlighted:active,
@@ -2117,12 +2232,12 @@ fieldset[disabled] .datepicker table tr td.highlighted:focus,
 .datepicker table tr td.highlighted.disabled.focus,
 .datepicker table tr td.highlighted[disabled].focus,
 fieldset[disabled] .datepicker table tr td.highlighted.focus {
-  border: #000;
+  border: #bbbbbb;
   background: #eeeeee;
 }
 .datepicker table tr td.highlighted .badge {
   color: #eeeeee;
-  background: #bbbbbb;
+  background: #000;
 }
 .datepicker table tr td.highlighted.focused {
   background: #d5d5d5;
@@ -2134,23 +2249,23 @@ fieldset[disabled] .datepicker table tr td.highlighted.focus {
 }
 .datepicker table tr td.today {
   border: #000;
-  color: #ffb733;
-  background: #ffdb99;
+  color: #ffdb99;
+  background: #ffb733;
 }
 .datepicker table tr td.today:focus,
 .datepicker table tr td.today.focus {
-  color: #ffb733;
-  background: #ffdb99;
+  color: #ffdb99;
+  background: #ffb733;
 }
 .datepicker table tr td.today:hover {
-  color: #ffb733;
-  background: #ffdb99;
+  color: #ffdb99;
+  background: #ffb733;
 }
 .datepicker table tr td.today:active,
 .datepicker table tr td.today.active,
 .open > .dropdown-toggle.datepicker table tr td.today {
-  color: #ffb733;
-  background: #ffc966;
+  color: #ffdb99;
+  background: #ffa500;
 }
 .datepicker table tr td.today:active:hover,
 .datepicker table tr td.today.active:hover,
@@ -2161,8 +2276,8 @@ fieldset[disabled] .datepicker table tr td.highlighted.focus {
 .datepicker table tr td.today:active.focus,
 .datepicker table tr td.today.active.focus,
 .open > .dropdown-toggle.datepicker table tr td.today.focus {
-  color: #ffb733;
-  background: #ffbc42;
+  color: #ffdb99;
+  background: #db8e00;
 }
 .datepicker table tr td.today:active,
 .datepicker table tr td.today.active,
@@ -2179,11 +2294,11 @@ fieldset[disabled] .datepicker table tr td.today:focus,
 .datepicker table tr td.today[disabled].focus,
 fieldset[disabled] .datepicker table tr td.today.focus {
   border: #000;
-  background: #ffdb99;
+  background: #ffb733;
 }
 .datepicker table tr td.today .badge {
-  color: #ffdb99;
-  background: #ffb733;
+  color: #ffb733;
+  background: #ffdb99;
 }
 .datepicker table tr td.today.focused {
   background: #ffc966;
@@ -2195,24 +2310,23 @@ fieldset[disabled] .datepicker table tr td.today.focus {
 }
 .datepicker table tr td.range {
   border: #000;
-  color: #bbbbbb;
-  background: #eeeeee;
-  border-radius: 0;
+  color: #eeeeee;
+  background: #bbbbbb;
 }
 .datepicker table tr td.range:focus,
 .datepicker table tr td.range.focus {
-  color: #bbbbbb;
-  background: #eeeeee;
+  color: #eeeeee;
+  background: #bbbbbb;
 }
 .datepicker table tr td.range:hover {
-  color: #bbbbbb;
-  background: #eeeeee;
+  color: #eeeeee;
+  background: #bbbbbb;
 }
 .datepicker table tr td.range:active,
 .datepicker table tr td.range.active,
 .open > .dropdown-toggle.datepicker table tr td.range {
-  color: #bbbbbb;
-  background: #d5d5d5;
+  color: #eeeeee;
+  background: #a2a2a2;
 }
 .datepicker table tr td.range:active:hover,
 .datepicker table tr td.range.active:hover,
@@ -2223,8 +2337,8 @@ fieldset[disabled] .datepicker table tr td.today.focus {
 .datepicker table tr td.range:active.focus,
 .datepicker table tr td.range.active.focus,
 .open > .dropdown-toggle.datepicker table tr td.range.focus {
-  color: #bbbbbb;
-  background: #c3c3c3;
+  color: #eeeeee;
+  background: #909090;
 }
 .datepicker table tr td.range:active,
 .datepicker table tr td.range.active,
@@ -2241,11 +2355,11 @@ fieldset[disabled] .datepicker table tr td.range:focus,
 .datepicker table tr td.range[disabled].focus,
 fieldset[disabled] .datepicker table tr td.range.focus {
   border: #000;
-  background: #eeeeee;
+  background: #bbbbbb;
 }
 .datepicker table tr td.range .badge {
-  color: #eeeeee;
-  background: #bbbbbb;
+  color: #bbbbbb;
+  background: #eeeeee;
 }
 .datepicker table tr td.range.focused {
   background: #d5d5d5;
@@ -2256,24 +2370,24 @@ fieldset[disabled] .datepicker table tr td.range.focus {
   color: #eeeeee;
 }
 .datepicker table tr td.range.highlighted {
-  border: #000;
-  color: #c4a977;
-  background: #947641;
+  border: #bbbbbb;
+  color: #000;
+  background: #eeeeee;
 }
 .datepicker table tr td.range.highlighted:focus,
 .datepicker table tr td.range.highlighted.focus {
-  color: #c4a977;
-  background: #947641;
+  color: #000;
+  background: #eeeeee;
 }
 .datepicker table tr td.range.highlighted:hover {
-  color: #c4a977;
-  background: #947641;
+  color: #000;
+  background: #eeeeee;
 }
 .datepicker table tr td.range.highlighted:active,
 .datepicker table tr td.range.highlighted.active,
 .open > .dropdown-toggle.datepicker table tr td.range.highlighted {
-  color: #c4a977;
-  background: #705a31;
+  color: #000;
+  background: #d5d5d5;
 }
 .datepicker table tr td.range.highlighted:active:hover,
 .datepicker table tr td.range.highlighted.active:hover,
@@ -2284,8 +2398,8 @@ fieldset[disabled] .datepicker table tr td.range.focus {
 .datepicker table tr td.range.highlighted:active.focus,
 .datepicker table tr td.range.highlighted.active.focus,
 .open > .dropdown-toggle.datepicker table tr td.range.highlighted.focus {
-  color: #c4a977;
-  background: #584626;
+  color: #000;
+  background: #c3c3c3;
 }
 .datepicker table tr td.range.highlighted:active,
 .datepicker table tr td.range.highlighted.active,
@@ -2301,40 +2415,40 @@ fieldset[disabled] .datepicker table tr td.range.highlighted:focus,
 .datepicker table tr td.range.highlighted.disabled.focus,
 .datepicker table tr td.range.highlighted[disabled].focus,
 fieldset[disabled] .datepicker table tr td.range.highlighted.focus {
-  border: #000;
-  background: #947641;
+  border: #bbbbbb;
+  background: #eeeeee;
 }
 .datepicker table tr td.range.highlighted .badge {
-  color: #947641;
-  background: #c4a977;
+  color: #eeeeee;
+  background: #000;
 }
 .datepicker table tr td.range.highlighted.focused {
-  background: #b49254;
+  background: #d5d5d5;
 }
 .datepicker table tr td.range.highlighted.disabled,
 .datepicker table tr td.range.highlighted.disabled:active {
-  background: #c4a977;
+  background: #eeeeee;
   color: #eeeeee;
 }
 .datepicker table tr td.range.today {
-  border: #000;
-  color: #f7ca77;
-  background: #f1a417;
+  border: #f1a417;
+  color: #000;
+  background: #f7ca77;
 }
 .datepicker table tr td.range.today:focus,
 .datepicker table tr td.range.today.focus {
-  color: #f7ca77;
-  background: #f1a417;
+  color: #000;
+  background: #f7ca77;
 }
 .datepicker table tr td.range.today:hover {
-  color: #f7ca77;
-  background: #f1a417;
+  color: #000;
+  background: #f7ca77;
 }
 .datepicker table tr td.range.today:active,
 .datepicker table tr td.range.today.active,
 .open > .dropdown-toggle.datepicker table tr td.range.today {
-  color: #f7ca77;
-  background: #c8860c;
+  color: #000;
+  background: #f4b747;
 }
 .datepicker table tr td.range.today:active:hover,
 .datepicker table tr td.range.today.active:hover,
@@ -2345,8 +2459,8 @@ fieldset[disabled] .datepicker table tr td.range.highlighted.focus {
 .datepicker table tr td.range.today:active.focus,
 .datepicker table tr td.range.today.active.focus,
 .open > .dropdown-toggle.datepicker table tr td.range.today.focus {
-  color: #f7ca77;
-  background: #a66f0a;
+  color: #000;
+  background: #f1a925;
 }
 .datepicker table tr td.range.today:active,
 .datepicker table tr td.range.today.active,
@@ -2362,12 +2476,12 @@ fieldset[disabled] .datepicker table tr td.range.today:focus,
 .datepicker table tr td.range.today.disabled.focus,
 .datepicker table tr td.range.today[disabled].focus,
 fieldset[disabled] .datepicker table tr td.range.today.focus {
-  border: #000;
-  background: #f1a417;
+  border: #f1a417;
+  background: #f7ca77;
 }
 .datepicker table tr td.range.today .badge {
-  color: #f1a417;
-  background: #f7ca77;
+  color: #f7ca77;
+  background: #000;
 }
 .datepicker table tr td.range.today.disabled,
 .datepicker table tr td.range.today.disabled:active {
@@ -2548,7 +2662,6 @@ fieldset[disabled] .datepicker table tr td.active.highlighted.focus {
   float: left;
   margin: 1%;
   cursor: pointer;
-  border-radius: 4px;
 }
 .datepicker table tr td span:hover,
 .datepicker table tr td span.focused {
@@ -2738,12 +2851,6 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.focus {
 }
 .input-daterange input {
   text-align: center;
-}
-.input-daterange input:first-child {
-  border-radius: 3px 0 0 3px;
-}
-.input-daterange input:last-child {
-  border-radius: 0 3px 3px 0;
 }
 .input-daterange .input-group-addon {
   width: auto;

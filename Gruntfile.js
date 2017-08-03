@@ -9,7 +9,7 @@ module.exports = function (grunt) {
         },
         concat: {
             dist: {
-                src: ['js/modal.js', 'js/bootstrap-datepicker.js','js/bootstrap-datepicker.zh-CN.js'],
+                src: ['js/*.js'],
                 dest: 'dist/js/workflow-theme.js',
             },
         },

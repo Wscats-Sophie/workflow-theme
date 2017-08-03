@@ -36,6 +36,7 @@
 @line-height-base:                  1.428;
 @line-height-medium:                2;
 @line-height-large:                 3;
+@line-height-computed:              floor((@font-size-base * @line-height-base)); 
 
 @link-color:                        @gray-dark;
 @link-hover-color:                  @gray;
@@ -344,8 +345,29 @@
 //== 时间线
 @time-line-padding:                 @component-padding 0;
 
+//== 下拉框列表
+@caret-top-border:                  4px solid dashed;
+@caret-left-right-border:           4px solid transparent;
+@caret-width-base:                  4px;
+@caret-width-large:                 5px;
+
+@dropdown-border:                   @component-border;
+@dropdown-bg:                       @component-bg;
+@dropdown-zindex:                   1000;
+@dropdown-divider-bg:               #e5e5e5;
+
+@dropdown-link-color:               @gray-dark;
+@dropdown-link-hover-color:         darken(@gray-dark, 5%);
+@dropdown-link-hover-bg:            #f5f5f5;
+@dropdown-link-active-color:        @component-active-color;
+@dropdown-link-active-bg:           @component-active-bg;
+@dropdown-link-disabled-color:      @gray-light;
+@dropdown-header-color:             @gray-light;
+@dropdown-caret-color:              #000;
+
 //== 日期选择器
- @datepicker-dropdown-border:       @gray-dark;
- @datepicker-dropdown-bg:           @white;
- @datepicker-disabled-color:        @component-disabled-bg;
- @datepicker-highlighted-bg:        @component-active-bg;
+@datepicker-border-radius:          4px;
+@datepicker-dropdown-border:        7px solid @gray-dark;
+@datepicker-dropdown-bg:            6px solid @white;
+@datepicker-disabled-color:         @gray-lighter;
+@datepicker-highlighted-bg:         @component-active-bg;
