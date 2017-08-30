@@ -295,6 +295,41 @@ small,
 .text-nowrap {
   white-space: nowrap;
 }
+.text-primary {
+  color: #3280ff;
+}
+a.text-primary:hover,
+a.text-primary:focus {
+  color: #0061fe;
+}
+.text-success {
+  color: #5cb85c;
+}
+a.text-success:hover,
+a.text-success:focus {
+  color: #449d44;
+}
+.text-info {
+  color: #5cb85c;
+}
+a.text-info:hover,
+a.text-info:focus {
+  color: #449d44;
+}
+.text-warning {
+  color: #f0ad4e;
+}
+a.text-warning:hover,
+a.text-warning:focus {
+  color: #ec971f;
+}
+.text-danger {
+  color: #fe3d3d;
+}
+a.text-danger:hover,
+a.text-danger:focus {
+  color: #fe0a0a;
+}
 .page-header {
   padding: 0 0 10px;
   border-bottom: thin solid #eeeeee;
@@ -618,7 +653,6 @@ small,
   font-size: 16px;
   line-height: 2;
   text-align: center;
-  vertical-align: middle;
 }
 .tab-header-item.active > a,
 .tab-header-item:hover > a,
@@ -818,6 +852,7 @@ select > option {
   width: 255px;
 }
 .form-inline .form-group input[type="search"] {
+  margin-right: 20px;
   width: 250px;
 }
 .form-inline .form-group button[type="submit"] {
