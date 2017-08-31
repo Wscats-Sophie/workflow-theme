@@ -58,10 +58,10 @@
         (function () {
             var cn = {
                 autoclose: true,
-                format: "yyyy",
-                minViewMode: 2,
-                maxViewMode: 2,
-                language: "zh-CN"
+                format: "yyyy年mm月dd日",
+                language: "zh-CN",
+                todayHighlight: true,
+                startDate: Date()
             };
             $('[data-provide="datepicker"]').datepicker(cn);
         })();

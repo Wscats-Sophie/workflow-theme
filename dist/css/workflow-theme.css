@@ -2144,7 +2144,7 @@ button.close {
   display: inline-block;
   border-left: 7px solid transparent;
   border-right: 7px solid transparent;
-  border-bottom: 7px solid #333333;
+  border-bottom: 7px solid #ffffff;
   border-top: 0;
   border-bottom-color: rgba(0, 0, 0, 0.2);
   position: absolute;
@@ -2179,7 +2179,7 @@ button.close {
 .datepicker-dropdown.datepicker-orient-top:before {
   bottom: -7px;
   border-bottom: 0;
-  border-top: 7px solid #333333;
+  border-top: 7px solid #ffffff;
 }
 .datepicker-dropdown.datepicker-orient-top:after {
   bottom: -6px;
@@ -2208,8 +2208,8 @@ button.close {
 }
 .datepicker table tr td {
   border: #000;
-  color: #eeeeee;
-  background: #bbbbbb;
+  color: #000000;
+  background: white;
 }
 .datepicker table tr td.old,
 .datepicker table tr td.new {
@@ -2350,18 +2350,18 @@ fieldset[disabled] .datepicker table tr td.today.focus {
 }
 .datepicker table tr td:focus,
 .datepicker table tr td.focus {
-  color: #eeeeee;
-  background: #bbbbbb;
+  color: #000000;
+  background: white;
 }
 .datepicker table tr td:hover {
-  color: #eeeeee;
-  background: #bbbbbb;
+  color: #000000;
+  background: white;
 }
 .datepicker table tr td:active,
 .datepicker table tr td.active,
 .open > .dropdown-toggle.datepicker table tr td {
-  color: #eeeeee;
-  background: #a2a2a2;
+  color: #000000;
+  background: #e6e6e6;
 }
 .datepicker table tr td:active:hover,
 .datepicker table tr td.active:hover,
@@ -2372,8 +2372,8 @@ fieldset[disabled] .datepicker table tr td.today.focus {
 .datepicker table tr td:active.focus,
 .datepicker table tr td.active.focus,
 .open > .dropdown-toggle.datepicker table tr td.focus {
-  color: #eeeeee;
-  background: #909090;
+  color: #000000;
+  background: #d4d4d4;
 }
 .datepicker table tr td:active,
 .datepicker table tr td.active,
@@ -2390,11 +2390,11 @@ fieldset[disabled] .datepicker table tr td:focus,
 .datepicker table tr td[disabled].focus,
 fieldset[disabled] .datepicker table tr td.focus {
   border: #000;
-  background: #bbbbbb;
+  background: white;
 }
 .datepicker table tr td .badge {
-  color: #bbbbbb;
-  background: #eeeeee;
+  color: white;
+  background: #000000;
 }
 .datepicker table tr td.focused {
   background: #d5d5d5;
@@ -2402,7 +2402,7 @@ fieldset[disabled] .datepicker table tr td.focus {
 .datepicker table tr td.disabled,
 .datepicker table tr td.disabled:active {
   background: #eeeeee;
-  color: #eeeeee;
+  color: #000000;
 }
 .datepicker table tr td.range.highlighted {
   border: #bbbbbb;

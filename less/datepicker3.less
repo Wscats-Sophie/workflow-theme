@@ -133,17 +133,15 @@
                 color: @datepicker-disabled-color;
             }
         }
-        &
-         {
-            @range-bg: @gray-lighter;
-            .button-variant(#000, @range-bg, darken(@range-bg, 20%));
+        & {
+            .button-variant(#000, @black, white);
             &.focused {
-                background: darken(@range-bg, 10%);
+                background: darken(@gray-lighter, 10%);
             }
             &.disabled,
             &.disabled:active {
-                background: @range-bg;
-                color: @datepicker-disabled-color;
+                background: @component-disabled-bg;
+                color: @black;
             }
         }
         &.range.highlighted {
