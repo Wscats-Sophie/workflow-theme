@@ -9,11 +9,12 @@
     "explorer.openEditors.visible": 0,
     "workbench.startupEditor": "newUntitledFile",
     "workbench.iconTheme": "vs-seti",
-    "less.compile": {
-        "compress": false,
-        "sourceMap": false,
-        "out": "../dist/css/workflow-theme"
-    },
     "editor.minimap.enabled": false,
-    "explorer.autoReveal": false
+    "explorer.autoReveal": false,
+    "less.compile": {
+        "sourceMap": true,
+        "compress": false,
+        "out": "../dist/css/workflow-theme.css",
+        "main": "./workflow-theme.less"
+    }
 }
