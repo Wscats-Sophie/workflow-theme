@@ -1893,8 +1893,8 @@ input[type="button"].btn-block {
   vertical-align: middle;
 }
 .milestone-defalut {
-  border: thin solid #eeeeee;
-  background: #ffffff;
+  border: thin solid #999999;
+  background: #999999;
 }
 .milestone-primary {
   border: thin solid #3280ff;
