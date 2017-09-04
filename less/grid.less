@@ -1,62 +1,52 @@
 //
 // 布局
 //
-
 @import "variables.less";
 @import "mixins.less";
-
-
 .container {
     position: relative;
+    .clearfix;
 }
 
 .row {
     position: relative;
     .clearfix;
-
-    > .column-1 {
+    >.column-1 {
         float: left;
         width: 10%;
         .clearfix;
     }
-
-    > .column-2 {
+    >.column-2 {
         float: left;
         width: 20%;
         .clearfix;
     }
-
-    > .column-3 {
+    >.column-3 {
         float: left;
         width: 33.33%;
         .clearfix;
     }
-
-    > .column-4 {
+    >.column-4 {
         float: left;
         width: 40%;
     }
-
-    > .column-5 {
+    >.column-5 {
         float: left;
         width: 50%;
         .clearfix;
     }
-
-    > .column-6 {
+    >.column-6 {
         float: left;
         width: 60%;
         .clearfix;
     }
-
-    > .column-1,
-    > .column-2,
-    > .column-3,
-    > .column-4,
-    > .column-5,
-    > .column-6 {
+    >.column-1,
+    >.column-2,
+    >.column-3,
+    >.column-4,
+    >.column-5,
+    >.column-6 {
         padding: 0 20px 0 0;
-
         &:last-child {
             padding: 0;
         }

@@ -1,10 +1,8 @@
 ﻿//
 // 选项卡
 //
-
 @import "variables.less";
 @import "mixins.less";
-
 .tab {
     position: absolute;
     top: 0px;
@@ -23,8 +21,7 @@
 .tab-header-item {
     float: left;
     height: 100%;
-
-    > a {
+    >a {
         display: block;
         padding: @tab-header-item-padding;
         height: inherit;
@@ -35,23 +32,20 @@
         line-height: @tab-header-item-line-height;
         text-align: center;
     }
-
-    &.active > a,
-    &:hover > a,
-    &:focus > a {
+    &.active>a,
+    &:hover>a,
+    &:focus>a {
         border-bottom: @tab-header-item-active-border-bottom;
         color: @tab-header-item-active-color;
     }
 }
 
 .tab-content {
-    display: table;
-    table-layout: fixed;
     width: 100%;
     height: @tab-content-height;
     margin-top: @tab-content-margin-top;
     padding: @tab-content-padding;
     border-radius: @tab-border-radius;
     background: @tab-content-bg;
-    overflow-x: auto;
+    overflow-y: auto;
 }

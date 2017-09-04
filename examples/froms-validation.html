@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zn-CN">
+<head>
+    <title>表单验证</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../dist/css/workflow-theme.css">
+    <link rel="stylesheet" href="css/division.css">
+</head>
+<body>
+    <section>
+        <form>
+            <div class="form-group ">
+                <label for="user" class="form-label">用户名</label>
+                <input class="form-control" id="user" name="username" required placeholder="请输入用户名...">
+            </div>
+            <div class="form-group">
+                <label for="password" class="form-label">密码</label>
+                <input class="form-control" id="password" name="password" required placeholder="请输入密码...">
+            </div>
+            <div class="form-group">
+                <input type="submit" value="提交">
+            </div>
+        </form>
+    </section>
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/jquery-validation/dist/jquery.validate.js"></script>
+    <script>
+        var options = {
+            debug: true,
+            messages: {
+                username: '用户名不能为空',
+                password: '密码不能为空'
+            },
+            invalidHandler: function (e, validator) {
+                $.each(validator.errorList, function (index, item) {
+                    $(item.element)
+                        .closest('.form-group')
+                        .removeClass('form-success')
+                        .addClass('form-error');
+                });
+            },
+            success: function (label) {
+                $(label)
+                    .closest('.form-group')
+                    .removeClass('form-error')
+                    .addClass('form-success');
+            },
+            submitHandler: function (form) {
+                form.submit();
+            },
+            message: false
+        }
+        $('form').validate(options);
+    </script>
+</body>
+</html>
