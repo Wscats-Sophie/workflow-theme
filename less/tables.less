@@ -1,37 +1,31 @@
 ﻿//
 // 表格
 //
-
 @import "variables.less";
 @import "mixins.less";
-
 .table {
     table-layout: fixed;
     width: 100%;
     border-collapse: separate;
     border: @table-cell-border;
     border-radius: @table-border-radius;
-
-    > thead,
-    > tbody,
-    > tfoot {
-        > tr {
-            > th {
+    >thead,
+    >tbody,
+    >tfoot {
+        >tr {
+            >th {
                 color: @table-header-color;
                 font-size: @table-header-font-size;
                 font-weight: normal;
             }
-
-            > td {
+            >td {
                 color: @table-cell-color;
-
-                > a.btn {
+                >a.btn {
                     margin: 0 1em 0 0;
                 }
             }
-
-            > th,
-            > td {
+            >th,
+            >td {
                 padding: @table-cell-padding;
                 border-bottom: @table-cell-border;
                 border-right: @table-cell-border;
@@ -39,30 +33,25 @@
                 text-align: center;
                 .text-overflow;
             }
-
-            > th:last-child,
-            > td:last-child {
+            >th:last-child,
+            >td:last-child {
                 border-right: none;
             }
         }
     }
-
-    > tbody > tr:last-child > th,
-    > tbody tr:last-child > td {
+    >tbody>tr:last-child>th,
+    >tbody tr:last-child>td {
         border-bottom: none;
     }
-
-    > tbody > tr,
-    > tbody > tr {
+    >tbody>tr,
+    >tbody>tr {
         &.anger {
             color: @table-row-anger-color;
         }
     }
-
-    & + .table {
+    &+.table {
         margin-left: 20px;
     }
-
     select,
     input {
         border: none;
@@ -71,12 +60,12 @@
 }
 
 .table-condensed {
-    > thead,
-    > tbody,
-    > tfoot {
-        > tr {
-            > th,
-            > td {
+    >thead,
+    >tbody,
+    >tfoot {
+        >tr {
+            >th,
+            >td {
                 padding: @table-condensed-cell-padding;
                 font-size: @table-condensed-cell-font-size;
             }
@@ -85,9 +74,9 @@
 }
 
 .table-head-wrap {
-    > thead {
-        > tr {
-            > th {
+    >thead {
+        >tr {
+            >th {
                 white-space: normal;
             }
         }
@@ -95,12 +84,12 @@
 }
 
 .table-action {
-    > thead,
-    > tbody,
-    > tfoot {
-        > tr {
-            > th:last-child,
-            > td:last-child {
+    >thead,
+    >tbody,
+    >tfoot {
+        >tr {
+            >th:last-child,
+            >td:last-child {
                 width: 400px;
             }
         }
