@@ -22,6 +22,7 @@
             table-layout: fixed;
             width: 100%;
             >li {
+                position: relative;
                 display: table-cell;
                 padding: @list-group-padding;
                 color: @lisg-group-color;
@@ -30,6 +31,11 @@
                 .text-overflow;
                 &:not(:last-child) {
                     border-right: @list-group-border;
+                }
+                >img {
+                    position: absolute;
+                    left: 0;
+                    .icon(20px);
                 }
             }
         }
@@ -50,9 +56,19 @@
         width: 100%;
         text-align: left;
     }
-    .list-group-item-variant(primary;@white;@primary);
-    .list-group-item-variant(success;@white;@success);
-    .list-group-item-variant(info;@white;@info);
-    .list-group-item-variant(warning;@white;@warning);
-    .list-group-item-variant(danger;@white;@danger);
+    .list-group-item-variant(primary;
+    @white;
+    @primary);
+    .list-group-item-variant(success;
+    @white;
+    @success);
+    .list-group-item-variant(info;
+    @white;
+    @info);
+    .list-group-item-variant(warning;
+    @white;
+    @warning);
+    .list-group-item-variant(danger;
+    @white;
+    @danger);
 }
