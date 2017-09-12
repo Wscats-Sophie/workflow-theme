@@ -1,6 +1,6 @@
 @charset "uft-8";
 /*!
- * Workflow-theme v1.0.11
+ * Workflow-theme v1.0.12
  * 基于 Bootstrap v3.3.7 (http://getbootstrap.com) 修改
  * Copyright 2017 NNCQ, Inc.
  * 许可 MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
@@ -1251,7 +1251,7 @@ fieldset[disabled] .form-control {
 }
 .pagination {
   display: block;
-  margin: 30px 0 0;
+  margin: 20px 0 0;
   border-radius: 5px;
 }
 .pagination:before,
