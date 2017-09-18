@@ -984,6 +984,9 @@ select > option {
 .form-inline .form-group .progress {
   width: 150px;
 }
+.form-inline .form-group .milestone {
+  display: inline-block;
+}
 .form-inline + .table,
 .form-inline + .list-group {
   margin-top: 20px;
