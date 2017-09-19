@@ -687,6 +687,11 @@ a.text-danger:focus {
   background: #ffffff;
   overflow-y: auto;
 }
+.table-overflow > tbody > tr > td {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 .decoration-bar {
   position: absolute;
   height: 45px;
