@@ -6,193 +6,78 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>列表组</title>
     <link rel="stylesheet" href="../dist/css/workflow-theme.css">
+    <link rel="stylesheet" href="css/division.css">
 </head>
 <body>
-    <div class="list-group">
-        <div class="list-group-item">
-            <ul class="list-group-item-heading">
-                <li>任务标题</li>
-                <li>任务类型</li>
-                <li>任务等级</li>
-                <li>任务状态</li>
-                <li>发布人</li>
-                <li>时间进度</li>
-                <li>完成进度</li>
-                <li>里程碑</li>
-            </ul>
+    <section>
+        <div class="list-group">
+            <div class="list-group-item">
+                <ul class="list-group-item-heading">
+                    <li>任务标题</li>
+                    <li>任务类型</li>
+                    <li>任务等级</li>
+                    <li>任务状态</li>
+                    <li>发布人</li>
+                    <li>时间进度</li>
+                    <li>完成进度</li>
+                    <li>里程碑</li>
+                </ul>
+            </div>
+            <a class="list-group-item list-group-item-danger" href="/Browse/Detail/0">
+                <ul>
+                    <li>
+                        <img src="" alt="add childs">任务标题任务标题任务标题任务标题
+                    </li>
+                    <li>跨部门任务</li>
+                    <li>普通</li>
+                    <li>办理中</li>
+                    <li>admin</li>
+                    <li>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped active danger" data-value="100" data-valuemin="0" data-valuemax="100" style="width: 80%">
+                            </div>
+                            <span class="small active">80%</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped active success" data-value="0" data-valuemin="0" data-valuemax="100" style="width: 12%">
+                            </div>
+                            <span class="small ">12%</span>
+                        </div>
+                    </li>
+                    <li>
+                    </li>
+                </ul>
+            </a>
+            <a class="list-group-item" href="/Browse/Detail/1">
+                <ul>
+                    <li>
+                        <img src="" alt="add childs">任务标题任务标题任务标题任务标题
+                    </li>
+                    <li>跨部门任务</li>
+                    <li>普通</li>
+                    <li>办理中</li>
+                    <li>admin</li>
+                    <li>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped active" data-value="100" data-valuemin="0" data-valuemax="100" style="width: 60%">
+                            </div>
+                            <span class="small">60%</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped active success" data-value="0" data-valuemin="0" data-valuemax="100" style="width: 33%">
+                            </div>
+                            <span class="small ">33%</span>
+                        </div>
+                    </li>
+                    <li>
+                    </li>
+                </ul>
+            </a>
         </div>
-        <a class="list-group-item list-group-item-danger" href="/Browse/Detail/ee6292f3-de3c-4a44-9e2c-8e703dd63118/Home">
-            <ul>
-                <li title="111">
-                    <img src="" alt="add childs"> 121212121
-                </li>
-                <li>跨部门任务</li>
-                <li>普通</li>
-                <li>办理中</li>
-                <li>admin</li>
-                <li>
-
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-striped active danger" data-value="100" data-valuemin="0" data-valuemax="100" style="width: 100%">
-                        </div>
-                        <span class="small active">100%</span>
-                    </div>
-                </li>
-                <li>
-
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-striped active success" data-value="0" data-valuemin="0" data-valuemax="100" style="width: 0%">
-                        </div>
-                        <span class="small ">0%</span>
-                    </div>
-                </li>
-                <li>
-
-                </li>
-            </ul>
-        </a>
-        <a class="list-group-item list-group-item-success" href="/Browse/Detail/5e8c1da2-acb4-4d27-9bc4-dc3a78a5cb3a/Home">
-            <ul>
-                <li title="112">112</li>
-                <li>部门内任务</li>
-                <li>普通</li>
-                <li>已评价</li>
-                <li>admin</li>
-                <li>
-
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-striped active info" data-value="100" data-valuemin="0" data-valuemax="100" style="width: 100%">
-                        </div>
-                        <span class="small active">已完成</span>
-                    </div>
-                </li>
-                <li>
-
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-striped active info" data-value="100" data-valuemin="0" data-valuemax="100" style="width: 100%">
-                        </div>
-                        <span class="small active">已完成</span>
-                    </div>
-                </li>
-                <li>
-
-                    <ul class="milestone">
-                    </ul>
-                </li>
-            </ul>
-        </a>
-        <a class="list-group-item " href="/Browse/Detail/f19319c0-f64d-4691-8b6c-00478f4bb601/Home">
-            <ul>
-                <li title="66">66</li>
-                <li>跨部门任务</li>
-                <li>普通</li>
-                <li>待发布</li>
-                <li>admin</li>
-                <li>
-
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-striped active success" data-value="0" data-valuemin="0" data-valuemax="100" style="width: 0%">
-                        </div>
-                        <span class="small ">0%</span>
-                    </div>
-                </li>
-                <li>
-
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-striped active success" data-value="0" data-valuemin="0" data-valuemax="100" style="width: 0%">
-                        </div>
-                        <span class="small ">0%</span>
-                    </div>
-                </li>
-                <li>
-
-                </li>
-            </ul>
-        </a>
-        <a class="list-group-item " href="/Browse/Detail/22fe1712-3551-4a14-be29-0f60e2f26840/Home">
-            <ul>
-                <li title="99">99</li>
-                <li>跨部门任务</li>
-                <li>普通</li>
-                <li>待发布</li>
-                <li>admin</li>
-                <li>
-
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-striped active success" data-value="0" data-valuemin="0" data-valuemax="100" style="width: 0%">
-                        </div>
-                        <span class="small ">0%</span>
-                    </div>
-                </li>
-                <li>
-
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-striped active success" data-value="0" data-valuemin="0" data-valuemax="100" style="width: 0%">
-                        </div>
-                        <span class="small ">0%</span>
-                    </div>
-                </li>
-                <li>
-
-                </li>
-            </ul>
-        </a>
-        <a class="list-group-item " href="/Browse/Detail/05bcd762-b196-43eb-963e-37a341a57292/Home">
-            <ul>
-                <li title="88">88</li>
-                <li>跨部门任务</li>
-                <li>普通</li>
-                <li>待发布</li>
-                <li>admin</li>
-                <li>
-
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-striped active success" data-value="0" data-valuemin="0" data-valuemax="100" style="width: 0%">
-                        </div>
-                        <span class="small ">0%</span>
-                    </div>
-                </li>
-                <li>
-
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-striped active success" data-value="0" data-valuemin="0" data-valuemax="100" style="width: 0%">
-                        </div>
-                        <span class="small ">0%</span>
-                    </div>
-                </li>
-                <li>
-
-                </li>
-            </ul>
-        </a>
-        <a class="list-group-item " href="/Browse/Detail/67d66f8e-c427-4c57-8bf3-3bb91a60e51a/Home">
-            <ul>
-                <li title="22">22</li>
-                <li>跨部门任务</li>
-                <li>普通</li>
-                <li>待发布</li>
-                <li>admin</li>
-                <li>
-
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-striped active success" data-value="0" data-valuemin="0" data-valuemax="100" style="width: 0%">
-                        </div>
-                        <span class="small ">0%</span>
-                    </div>
-                </li>
-                <li>
-
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-striped active success" data-value="0" data-valuemin="0" data-valuemax="100" style="width: 0%">
-                        </div>
-                        <span class="small ">0%</span>
-                    </div>
-                </li>
-                <li>
-
-                </li>
-            </ul>
-        </a>
-    </div>
+    </section>
 </body>
 </html>

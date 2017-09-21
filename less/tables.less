@@ -32,7 +32,7 @@
                 border-right: @table-cell-border;
                 line-height: @table-cell-line-height;
                 text-align: center;
-                .text-overflow;
+                .text-overflow();
             }
             >th:last-child,
             >td:last-child {
@@ -69,15 +69,8 @@
             >td {
                 padding: @table-condensed-cell-padding;
                 font-size: @table-condensed-cell-font-size;
-            }
-        }
-    }
-}
-
-.table-head-wrap {
-    >thead {
-        >tr {
-            >th {
+                overflow: visible;
+                text-overflow: clip;
                 white-space: normal;
             }
         }
