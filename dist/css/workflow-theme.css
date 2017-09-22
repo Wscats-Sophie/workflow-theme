@@ -333,7 +333,7 @@ a.text-danger:focus {
 .page-header {
   padding: 0 0 10px;
   border-bottom: thin solid #eeeeee;
-  font-size: 18px;
+  font-size: 20px;
 }
 .page-header > img {
   width: 32px;
@@ -701,7 +701,6 @@ a.text-danger:focus {
   z-index: -1;
 }
 .table {
-  table-layout: fixed;
   width: 100%;
   border-collapse: separate;
   border: thin solid #eeeeee;
@@ -711,7 +710,7 @@ a.text-danger:focus {
 .table > tbody > tr > th,
 .table > tfoot > tr > th {
   color: #333333;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: normal;
 }
 .table > thead > tr > td,
@@ -730,6 +729,7 @@ a.text-danger:focus {
 .table > thead > tr > td,
 .table > tbody > tr > td,
 .table > tfoot > tr > td {
+  max-width: 400px;
   padding: 8px 1em;
   border-bottom: thin solid #eeeeee;
   border-right: thin solid #eeeeee;
@@ -763,6 +763,9 @@ a.text-danger:focus {
   border: none;
   text-align: center;
 }
+.table-condensed {
+  table-layout: fixed;
+}
 .table-condensed > thead > tr > th,
 .table-condensed > tbody > tr > th,
 .table-condensed > tfoot > tr > th,
@@ -774,6 +777,9 @@ a.text-danger:focus {
   overflow: visible;
   text-overflow: clip;
   white-space: normal;
+  word-break: break-word;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 .table-action > thead > tr > th:last-child,
 .table-action > tbody > tr > th:last-child,
@@ -822,6 +828,9 @@ a.text-danger:focus {
   width: 20px;
   height: 20px;
   margin: 0 1em 0 0;
+}
+.list-group .list-group-item > ul:not(.list-group-item-heading) > li:first-child {
+  text-align: left;
 }
 .list-group .list-group-item .list-group-item-heading > li {
   color: #333333;
@@ -1198,7 +1207,7 @@ fieldset[disabled] .form-control {
 }
 .input-group-addon.input-lg {
   padding: 10px 1em;
-  font-size: 18px;
+  font-size: 20px;
 }
 .input-group-addon input[type="radio"],
 .input-group-addon input[type="checkbox"] {
@@ -1471,7 +1480,7 @@ fieldset[disabled] .form-control {
   background-color: #eeeeee;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
 }
 .btn {
@@ -1514,7 +1523,7 @@ fieldset[disabled] a.btn {
   border: 2px solid;
   padding: 5px 2em;
   border-radius: 25px;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.428;
 }
 .btn.small {

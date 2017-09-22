@@ -5,7 +5,6 @@
 @import "mixins.less";
 @import "types.less";
 .table {
-    table-layout: fixed;
     width: 100%;
     border-collapse: separate;
     border: @table-cell-border;
@@ -27,6 +26,7 @@
             }
             >th,
             >td {
+                max-width: @table-max-width;
                 padding: @table-cell-padding;
                 border-bottom: @table-cell-border;
                 border-right: @table-cell-border;
@@ -61,6 +61,7 @@
 }
 
 .table-condensed {
+    table-layout: fixed;
     >thead,
     >tbody,
     >tfoot {
@@ -72,6 +73,9 @@
                 overflow: visible;
                 text-overflow: clip;
                 white-space: normal;
+                word-break: break-word;
+                word-wrap: break-word;
+                overflow-wrap: break-word
             }
         }
     }
