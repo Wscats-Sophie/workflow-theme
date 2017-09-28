@@ -333,7 +333,7 @@ a.text-danger:focus {
 .page-header {
   padding: 0 0 10px;
   border-bottom: thin solid #eeeeee;
-  font-size: 20px;
+  font-size: 18px;
 }
 .page-header > img {
   width: 32px;
@@ -710,7 +710,7 @@ a.text-danger:focus {
 .table > tbody > tr > th,
 .table > tfoot > tr > th {
   color: #333333;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: normal;
 }
 .table > thead > tr > td,
@@ -1207,7 +1207,7 @@ fieldset[disabled] .form-control {
 }
 .input-group-addon.input-lg {
   padding: 10px 1em;
-  font-size: 20px;
+  font-size: 18px;
 }
 .input-group-addon input[type="radio"],
 .input-group-addon input[type="checkbox"] {
@@ -1480,7 +1480,7 @@ fieldset[disabled] .form-control {
   background-color: #eeeeee;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
 }
 .btn {
@@ -1523,8 +1523,12 @@ fieldset[disabled] a.btn {
   border: 2px solid;
   padding: 5px 2em;
   border-radius: 25px;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.428;
+}
+.btn.medium:active,
+.btn.medium:hover {
+  border: 2px solid;
 }
 .btn.small {
   padding: 2px 1em 2px 0;

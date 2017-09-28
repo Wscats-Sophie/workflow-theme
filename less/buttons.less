@@ -1,10 +1,8 @@
 ﻿//
 // 按钮
 //
-
 @import "variables.less";
 @import "mixins.less";
-
 // 基本样式
 .btn {
     display: inline-block;
@@ -15,8 +13,10 @@
     vertical-align: middle;
     cursor: pointer;
     white-space: nowrap;
-    .button-size(@btn-padding; @btn-border-radius; @btn-font-size; @btn-line-height);
-
+    .button-size(@btn-padding;
+    @btn-border-radius;
+    @btn-font-size;
+    @btn-line-height);
     &:active,
     &.active:focus,
     &.active.focus,
@@ -26,7 +26,6 @@
     &.focus {
         text-decoration: none;
     }
-
     &.disabled,
     &[disabled],
     fieldset[disabled] & {
@@ -34,51 +33,56 @@
         .opacity(.65);
         .box-shadow(none);
     }
-
-
     a& {
         &.disabled,
         fieldset[disabled] & {
             pointer-events: none;
         }
     }
-
     &.medium {
         border: 2px solid;
-        .button-size(@btn-medium-padding; @btn-medium-border-radius; @btn-medium-font-size; @btn-medium-line-height);
+        .button-size(@btn-medium-padding;
+        @btn-medium-border-radius;
+        @btn-medium-font-size;
+        @btn-medium-line-height);
+        &:active,
+        &:hover {
+            border: 2px solid;
+        }
     }
-
     &.small {
-        .button-size(@btn-small-padding; @btn-small-border-radius; @btn-small-font-size; @btn-small-line-height);
+        .button-size(@btn-small-padding;
+        @btn-small-border-radius;
+        @btn-small-font-size;
+        @btn-small-line-height);
     }
-
-    > img {
+    >img {
         .icon;
     }
 }
 
 .btn-defalut {
-    .button-variant(@btn-default-border; @btn-default-color; @btn-default-bg);
+    .button-variant(@btn-default-border, @btn-default-color, @btn-default-bg);
 }
 
 .btn-primary {
-    .button-variant(@btn-primary-border; @btn-primary-color; @btn-primary-bg);
+    .button-variant(@btn-primary-border, @btn-primary-color, @btn-primary-bg);
 }
 
 .btn-success {
-    .button-variant(@btn-success-border; @btn-success-color; @btn-success-bg);
+    .button-variant(@btn-success-border, @btn-success-color, @btn-success-bg);
 }
 
 .btn-info {
-    .button-variant(@btn-info-border; @btn-info-color; @btn-info-bg);
+    .button-variant(@btn-info-border, @btn-info-color, @btn-info-bg);
 }
 
 .btn-warning {
-    .button-variant(@btn-warning-border; @btn-warning-color; @btn-warning-bg);
+    .button-variant(@btn-warning-border, @btn-warning-color, @btn-warning-bg);
 }
 
 .btn-danger {
-    .button-variant(@btn-danger-border; @btn-danger-color; @btn-danger-bg);
+    .button-variant(@btn-danger-border, @btn-danger-color, @btn-danger-bg);
 }
 
 // 覆盖特殊表单
