@@ -1,14 +1,11 @@
 //
 // 菜单
 // 
-
 @import "variables.less";
 @import "mixins.less";
-
 .menu {
     position: absolute;
-    top: 0;
-    height: @menu-height;
+    min-height: @menu-min-height;
     width: @menu-width;
     margin-left: @menu-margin-left;
     color: @menu-color;
@@ -26,7 +23,6 @@
     display: block;
     color: @menu-item-color;
     padding: @menu-item-padding;
-
     &:hover,
     &:focus,
     &.active,
@@ -36,8 +32,7 @@
         background-color: @menu-item-hover-bg;
         text-decoration: none;
     }
-
-    > img {
+    >img {
         .icon;
         margin: 0 1em;
     }

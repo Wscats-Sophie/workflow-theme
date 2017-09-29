@@ -349,23 +349,11 @@ a.text-danger:focus {
   margin-top: 20px;
 }
 .container {
-  position: relative;
-}
-.container:before,
-.container:after {
-  content: " ";
-  display: table;
-}
-.container:after {
-  clear: both;
-}
-.container:before,
-.container:after {
-  content: " ";
-  display: table;
-}
-.container:after {
-  clear: both;
+  position: absolute;
+  top: 65px;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 .row {
   position: relative;
@@ -510,8 +498,10 @@ a.text-danger:focus {
   height: 50%;
 }
 .navbar {
+  position: absolute;
   height: 45px;
-  min-width: 1440px;
+  min-width: 1400px;
+  width: 100%;
   margin-bottom: 20px;
   color: #999999;
   background: #ffffff;
@@ -594,8 +584,7 @@ a.text-danger:focus {
 }
 .menu {
   position: absolute;
-  top: 0;
-  height: 885px;
+  min-height: 885px;
   width: 230px;
   margin-left: 20px;
   color: #999999;
@@ -629,11 +618,10 @@ a.text-danger:focus {
 }
 .tab {
   position: absolute;
-  top: 0px;
-  left: 250px;
-  margin: 0 20px;
-  min-width: 1170px;
-  width: auto;
+  padding: 0 20px 20px 270px;
+  width: 100%;
+  height: 100%;
+  min-width: 1400px;
 }
 .tab-header {
   height: 45px;
@@ -677,12 +665,9 @@ a.text-danger:focus {
   color: #333333;
 }
 .tab-content {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
   height: 820px;
   margin-top: 20px;
-  padding: 20px 40px;
+  padding: 20px;
   border-radius: 4px;
   background: #ffffff;
   overflow-y: auto;
@@ -695,7 +680,7 @@ a.text-danger:focus {
 .decoration-bar {
   position: absolute;
   height: 45px;
-  min-width: 1440px;
+  min-width: 1400px;
   width: 100%;
   background: white;
   z-index: -1;
@@ -710,7 +695,7 @@ a.text-danger:focus {
 .table > tbody > tr > th,
 .table > tfoot > tr > th {
   color: #333333;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: normal;
 }
 .table > thead > tr > td,

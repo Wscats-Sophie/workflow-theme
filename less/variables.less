@@ -55,7 +55,7 @@
 @icon-font-svg-id:                  "glyphicons_halflingsregular";
 
 //== 组件
-@component-full-width:              @menu-width + @component-margin * 2 + @tab-min-width;
+@component-full-width:              1400px;
 @component-height:                  45px;
 @component-margin:                  20px;
 @component-padding:                 20px;
@@ -98,7 +98,7 @@
 
 //== 菜单
 @menu-width:                        230px;
-@menu-height:                       @tab-header-height + @component-margin + @tab-content-height;
+@menu-min-height:                   @tab-header-height + @component-margin + @tab-content-height;
 @menu-margin-left:                  @component-margin;
 @menu-color:                        @component-color;
 @menu-bg:                           @component-bg;
@@ -118,9 +118,10 @@
 
 //== 选项卡
 @tab-left:                          @menu-width + @menu-margin-left;
-@tab-min-width:                     1170px;
+@tab-height:                        @menu-min-height;
+@tab-min-width:                     @component-full-width;
 @tab-width:                         auto;
-@tab-margin:                        0 @component-margin;
+@tab-padding:                       0 20px 20px 270px;
 
 @tab-header-height:                 @component-height;
 @tab-header-margin-left:            @component-margin * 2;
@@ -138,7 +139,7 @@
 
 @tab-content-height:                820px;
 @tab-content-margin-top:            @component-margin;
-@tab-content-padding:               @component-padding 40px;
+@tab-content-padding:               @component-padding;
 @tab-border-radius:                 4px;
 @tab-content-bg:                    @component-bg;
 
@@ -147,7 +148,7 @@
 @table-border-radius:               @component-border-radius;
 
 @table-header-color:                @component-active-color;
-@table-header-font-size:            @font-size-large;
+@table-header-font-size:            @font-size-base;
 
 @table-row-hover-bg:                @gray-lighter;
 @table-row-anger-color:             @danger;
