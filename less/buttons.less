@@ -40,24 +40,24 @@
         }
     }
     &.medium {
-        border: 2px solid;
-        .button-size(@btn-medium-padding;
-        @btn-medium-border-radius;
-        @btn-medium-font-size;
-        @btn-medium-line-height);
+        border-width: 2px !important;
+        .button-size(@btn-medium-padding, @btn-medium-border-radius, @btn-medium-font-size, @btn-medium-line-height);
         &:active,
         &:hover {
-            border: 2px solid;
+            border-width: 2px !important;
+        }
+        >img {
+            .icon(24px, 0 .5em 0 0);
         }
     }
     &.small {
-        .button-size(@btn-small-padding;
-        @btn-small-border-radius;
-        @btn-small-font-size;
-        @btn-small-line-height);
+        .button-size(@btn-small-padding, @btn-small-border-radius, @btn-small-font-size, @btn-small-line-height);
+        >img {
+            .icon(18px, 0 .5em 0 0);
+        }
     }
     >img {
-        .icon;
+        .icon();
     }
 }
 

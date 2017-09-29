@@ -9,8 +9,9 @@
 </head>
 <body>
     <section>
-        <div class="page-header">内联表单</div>
-        <p>样式：form-inline、form-group、form-label、form-control</p>
+        <div class="page-header">
+            <p>内联表单<small>样式：form-inline、form-group、form-label、form-control</small></p>
+        </div>
         <div class="form-inline">
             <div class="form-group">
                 <label for="user" class="form-label">用户名</label>
@@ -23,19 +24,22 @@
         </div>
     </section>
     <section>
+        <div class="page-header">
+            <p>内联表单<small>含有进度栏、里程碑</small></p>
+        </div>
+        <div class="page-header"></div>
         <div class="form-inline">
             <div class="form-group">
                 <img src="/images/progress.png">时间完成进度:
-
                 <div class="progress">
-                    <div class="progress-bar progress-bar-striped active info" data-value="100" data-valuemin="0" data-valuemax="100" style="width: 100%">
+                    <div class="progress-bar progress-bar-striped active info" data-value="100"
+                        data-valuemin="0" data-valuemax="100" style="width: 100%">
                     </div>
                     <span class="small active">已完成</span>
                 </div>
             </div>
             <div class="form-group">
                 <img src="/images/milestone.png">任务里碑程:
-
                 <ul class="milestone">
                     <li class="milestone-defalut"><input type="hidden" name="milestone" value="None"></li>
                     <li class="milestone-primary"><input type="hidden" name="milestone" value="None"></li>
@@ -45,9 +49,33 @@
                 </ul>
                 <ul class="milestone">
                 </ul>
-
             </div>
         </div>
+    </section>
+    <section>
+        <div class="page-header">
+            <p>表单组的验证状态<small>成功、警告、错误</small></p>
+        </div>
+        <form>
+            <div class="form-group form-success">
+                <img src="" alt="title">
+                <label class="form-label" for="title">成功</label>
+                <input class="form-control" id="title" type="text" name="Title" placeholder="请填写标题"
+                    required="required">
+            </div>
+            <div class="form-group form-warning">
+                <img src="" alt="title">
+                <label class="form-label" for="title">警告</label>
+                <input class="form-control" id="title" type="text" name="Title" placeholder="请填写标题"
+                    required="required">
+            </div>
+            <div class="form-group form-error">
+                <img src="" alt="title">
+                <label class="form-label" for="title">错误</label>
+                <input class="form-control" id="title" type="text" name="Title" placeholder="请填写标题"
+                    required="required">
+            </div>
+        </form>
     </section>
 </body>
 </html>

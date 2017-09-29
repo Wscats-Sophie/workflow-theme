@@ -1520,7 +1520,7 @@ fieldset[disabled] a.btn {
   pointer-events: none;
 }
 .btn.medium {
-  border: 2px solid;
+  border-width: 2px !important;
   padding: 5px 2em;
   border-radius: 25px;
   font-size: 18px;
@@ -1528,13 +1528,23 @@ fieldset[disabled] a.btn {
 }
 .btn.medium:active,
 .btn.medium:hover {
-  border: 2px solid;
+  border-width: 2px !important;
+}
+.btn.medium > img {
+  width: 24px;
+  height: 24px;
+  margin: 0 0.5em 0 0;
 }
 .btn.small {
-  padding: 2px 1em 2px 0;
+  padding: 2px 1em;
   border-radius: 25px;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.428;
+}
+.btn.small > img {
+  width: 18px;
+  height: 18px;
+  margin: 0 0.5em 0 0;
 }
 .btn > img {
   width: 24px;
