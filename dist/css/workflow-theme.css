@@ -211,10 +211,11 @@ th {
 }
 body {
   margin: 0;
-  color: #333333;
+  color: #000000;
   background-color: #eeeeee;
   font-family: "MicrosoftYaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
+  font-weight: bold;
   line-height: 1.428;
 }
 input,
@@ -374,124 +375,85 @@ a.text-danger:focus {
 .row:after {
   clear: both;
 }
-.row > .column-1 {
-  float: left;
+.column-1 {
   width: 10%;
 }
-.row > .column-1:before,
-.row > .column-1:after {
-  content: " ";
-  display: table;
-}
-.row > .column-1:after {
-  clear: both;
-}
-.row > .column-1:before,
-.row > .column-1:after {
-  content: " ";
-  display: table;
-}
-.row > .column-1:after {
-  clear: both;
-}
-.row > .column-2 {
-  float: left;
+.column-2 {
   width: 20%;
 }
-.row > .column-2:before,
-.row > .column-2:after {
-  content: " ";
-  display: table;
+.column-3 {
+  width: 30%;
 }
-.row > .column-2:after {
-  clear: both;
-}
-.row > .column-2:before,
-.row > .column-2:after {
-  content: " ";
-  display: table;
-}
-.row > .column-2:after {
-  clear: both;
-}
-.row > .column-3 {
-  float: left;
-  width: 33.33%;
-}
-.row > .column-3:before,
-.row > .column-3:after {
-  content: " ";
-  display: table;
-}
-.row > .column-3:after {
-  clear: both;
-}
-.row > .column-3:before,
-.row > .column-3:after {
-  content: " ";
-  display: table;
-}
-.row > .column-3:after {
-  clear: both;
-}
-.row > .column-4 {
-  float: left;
+.column-4 {
   width: 40%;
 }
-.row > .column-5 {
-  float: left;
+.column-5 {
   width: 50%;
 }
-.row > .column-5:before,
-.row > .column-5:after {
-  content: " ";
-  display: table;
-}
-.row > .column-5:after {
-  clear: both;
-}
-.row > .column-5:before,
-.row > .column-5:after {
-  content: " ";
-  display: table;
-}
-.row > .column-5:after {
-  clear: both;
-}
-.row > .column-6 {
-  float: left;
+.column-6 {
   width: 60%;
 }
-.row > .column-6:before,
-.row > .column-6:after {
-  content: " ";
-  display: table;
-}
-.row > .column-6:after {
-  clear: both;
-}
-.row > .column-6:before,
-.row > .column-6:after {
-  content: " ";
-  display: table;
-}
-.row > .column-6:after {
-  clear: both;
-}
-.row > .column-1,
-.row > .column-2,
-.row > .column-3,
-.row > .column-4,
-.row > .column-5,
-.row > .column-6 {
+.column-1,
+.column-2,
+.column-3,
+.column-4,
+.column-5,
+.column-6 {
+  float: left;
   padding: 0 20px 0 0;
 }
-.row > .column-1:last-child,
-.row > .column-2:last-child,
-.row > .column-3:last-child,
-.row > .column-4:last-child,
-.row > .column-5:last-child,
-.row > .column-6:last-child {
+.column-1:before,
+.column-2:before,
+.column-3:before,
+.column-4:before,
+.column-5:before,
+.column-6:before,
+.column-1:after,
+.column-2:after,
+.column-3:after,
+.column-4:after,
+.column-5:after,
+.column-6:after {
+  content: " ";
+  display: table;
+}
+.column-1:after,
+.column-2:after,
+.column-3:after,
+.column-4:after,
+.column-5:after,
+.column-6:after {
+  clear: both;
+}
+.column-1:before,
+.column-2:before,
+.column-3:before,
+.column-4:before,
+.column-5:before,
+.column-6:before,
+.column-1:after,
+.column-2:after,
+.column-3:after,
+.column-4:after,
+.column-5:after,
+.column-6:after {
+  content: " ";
+  display: table;
+}
+.column-1:after,
+.column-2:after,
+.column-3:after,
+.column-4:after,
+.column-5:after,
+.column-6:after {
+  clear: both;
+}
+.column-1:last-child,
+.column-2:last-child,
+.column-3:last-child,
+.column-4:last-child,
+.column-5:last-child,
+.column-6:last-child {
   padding: 0;
 }
 .row-2 {
@@ -591,6 +553,7 @@ a.text-danger:focus {
   background-color: #ffffff;
   -webkit-box-shadow: 0 0 30px 8px #bbb;
   box-shadow: 0 0 30px 8px #bbb;
+  z-index: 2;
 }
 .menu-header {
   height: 45px;
@@ -622,6 +585,7 @@ a.text-danger:focus {
   width: 100%;
   height: 100%;
   min-width: 1400px;
+  z-index: 1;
 }
 .tab-header {
   height: 45px;
@@ -696,7 +660,7 @@ a.text-danger:focus {
 .table > tfoot > tr > th {
   color: #333333;
   font-size: 14px;
-  font-weight: normal;
+  font-weight: bold;
 }
 .table > thead > tr > td,
 .table > tbody > tr > td,
@@ -714,10 +678,12 @@ a.text-danger:focus {
 .table > thead > tr > td,
 .table > tbody > tr > td,
 .table > tfoot > tr > td {
-  max-width: 400px;
+  max-width: 200px;
   padding: 8px 1em;
   border-bottom: thin solid #eeeeee;
   border-right: thin solid #eeeeee;
+  color: #000000;
+  font-weight: bold;
   line-height: 1.428;
   text-align: center;
   overflow: hidden;
@@ -1521,7 +1487,7 @@ fieldset[disabled] a.btn {
   margin: 0 0.5em 0 0;
 }
 .btn.small {
-  padding: 2px 1em;
+  padding: 5px 1em;
   border-radius: 25px;
   font-size: 12px;
   line-height: 1.428;
