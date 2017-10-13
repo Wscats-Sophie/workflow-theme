@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zn-CN">
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/division.css" rel="stylesheet">
+    <link rel="stylesheet" href="../dist/css/workflow-theme.css">
+</head>
+<body>
+    <section>
+        <select class="selectpicker" multiple>
+            <option>Mustard</option>
+            <option>Ketchup</option>
+            <option>Relish</option>
+        </select>
+    </section>
+    <section>
+        <select class="selectpicker">
+            <optgroup label="Picnic">
+                <option>Mustard</option>
+                <option>Ketchup</option>
+                <option>Relish</option>
+            </optgroup>
+            <optgroup label="Camping">
+                <option>Tent</option>
+                <option>Flashlight</option>
+                <option>Toilet Paper</option>
+            </optgroup>
+        </select>
+    </section>
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../dist/js/workflow-theme.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.selectpicker').selectpicker();
+
+        })
+    </script>
+</body>
+</html>
