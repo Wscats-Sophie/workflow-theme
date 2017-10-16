@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zn-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../dist/css/workflow-theme.css">
+    <link rel="stylesheet" href="css/division.css">
+    <title>工具提示</title>
+</head>
+<body>
+    <section>
+        <table class="table table-condensed">
+            <tbody>
+                <tr>
+                    <th>任务主题</th>
+                    <td>
+                        <span data-toggle="tooltip" title="超超长的内容超长的内容超长的内容超长的内容">
+                        超长的内容</span>
+                    </td>
+                    <th>要求完成时间</th>
+                    <td>2017年09月18日 - 2017年09月18日</td>
+                </tr>
+                <tr>
+                    <th>办理人</th>
+                    <td>admin</td>
+                    <th>办理部门</th>
+                    <td> 默认组织 </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section>
+        <a href="#" data-toggle="tooltip" title="tooptip-----a">tooptip</a>
+    </section>
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../dist/js/workflow-theme.js"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip({
+                placement: 'bottom'
+            })
+        });
+    </script> </body>
+</html>
