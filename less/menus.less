@@ -12,6 +12,13 @@
     background-color: @menu-bg;
     .box-shadow(@menu-box-shadow);
     z-index: 2;
+    .nested {
+        position: static;
+        display: none;
+        min-height: 0;
+        width: 210px;
+        box-shadow: 0 0 0;
+    }
 }
 
 .menu-header {
@@ -22,7 +29,7 @@
 
 .menu-item {
     display: block;
-    color: @menu-item-color;
+    position: relative;
     padding: @menu-item-padding;
     &:hover,
     &:focus,
@@ -36,5 +43,22 @@
     >img {
         .icon;
         margin: 0 1em;
+    }
+    .caret {
+        position: absolute;
+        right: 20px;
+        top: 15px;
+        
+        border-top: none;
+        border-bottom: 4px solid @gray;
+    }
+    &.expand {
+        .caret {
+            border-top: 4px solid @gray;
+            border-bottom: none;
+        }
+        +.nested {
+            display: block;
+        }
     }
 }
