@@ -11,7 +11,7 @@
 <body style="padding-top:2em">
     <section>
         <div class="page-header">默认表格</div>
-        <table class="table table-action">
+        <table class="table table-hover">
             <thead>
                 <tr>
                     <th>任务主题</th>
@@ -22,7 +22,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <tr class="danger">
                     <td>这里一个标题</td>
                     <td>abcedfghijklmn opqrstuvwxyz abcedfghijklmn opqrstuvwxyzabcedfghijklmn
                         opqrstuvwxyzabcedfghijklmn opqrstuvwxyzabcedfghijklmn
@@ -356,7 +356,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td rowspan="3">row 1 </td>
+                    <td rowspan="3">row 1 合并行的单元格</td>
                     <td>row 1 </td>
                     <td>row 1 </td>
                 </tr>
@@ -372,6 +372,107 @@
                     <td></td>
                     <td></td>
                     <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section>
+        <table class="table">
+            <thead>
+                <th>只有表头的表格</th>
+                <th>B</th>
+                <th>C</th>
+            </thead>
+        </table>
+    </section>
+    <section>
+        <table class="table">
+            <tbody>
+                <td>只有表体的表格</td>
+                <td>B</td>
+                <td>C</td>
+            </tbody>
+        </table>
+    </section>
+    <section>
+        <table class="table">
+            <tr>
+                <td>直接有行的表格</td>
+                <td>直接有行的表格</td>
+                <td>直接有行的表格</td>
+            </tr>
+        </table>
+    </section>
+    <section>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>A</th>
+                    <th>B</th>
+                    <th>C</th>
+                    <th>D</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="active">
+                    <td>row 1</td>
+                    <td>row 1</td>
+                    <td>row 1</td>
+                    <td>row 1</td>
+                </tr>
+                <tr>
+                    <td>row 1</td>
+                    <td>row 1</td>
+                    <td>row 1</td>
+                    <td>row 1</td>
+                </tr>
+                <tr class="success">
+                    <td>row 2</td>
+                    <td>row 2</td>
+                    <td>row 2</td>
+                    <td>row 2</td>
+                </tr>
+                <tr>
+                    <td>row 1</td>
+                    <td>row 1</td>
+                    <td>row 1</td>
+                    <td>row 1</td>
+                </tr>
+                <tr class="info">
+                    <td>row 3</td>
+                    <td>row 3</td>
+                    <td>row 3</td>
+                    <td>row 3</td>
+                </tr>
+                <tr>
+                    <td>row 1</td>
+                    <td>row 1</td>
+                    <td>row 1</td>
+                    <td>row 1</td>
+                </tr>
+                <tr class="warning">
+                    <td>row 4</td>
+                    <td>row 4</td>
+                    <td>row 4</td>
+                    <td>row 4</td>
+                </tr>
+                <tr>
+                    <td>row 1</td>
+                    <td>row 1</td>
+                    <td>row 1</td>
+                    <td>row 1</td>
+                </tr>
+                <tr class="danger">
+                    <td>row 5</td>
+                    <td>row 5</td>
+                    <td>row 5</td>
+                    <td>row 5</td>
+                </tr>
+                <tr>
+                    <td>row 1</td>
+                    <td>row 1</td>
+                    <td>row 1</td>
+                    <td>row 1</td>
                 </tr>
             </tbody>
         </table>
