@@ -748,6 +748,18 @@ a.text-danger:focus {
 .table-hover tbody tr:hover {
   background-color: #eeeeee;
 }
+.table-responsive {
+  overflow-x: auto;
+  min-height: 0.01%;
+}
+.table-action thead tr th:last-child,
+.table-action tbody tr th:last-child,
+.table-action tfoot tr th:last-child,
+.table-action thead tr td:last-child,
+.table-action tbody tr td:last-child,
+.table-action tfoot tr td:last-child {
+  width: 400px;
+}
 .table > thead > tr > td.active,
 .table > tbody > tr > td.active,
 .table > tfoot > tr > td.active,
@@ -852,14 +864,6 @@ a.text-danger:focus {
 .table-hover > tbody > tr:hover > .danger,
 .table-hover > tbody > tr.danger:hover > th {
   background-color: #ebcccc;
-}
-.table-action thead tr th:last-child,
-.table-action tbody tr th:last-child,
-.table-action tfoot tr th:last-child,
-.table-action thead tr td:last-child,
-.table-action tbody tr td:last-child,
-.table-action tfoot tr td:last-child {
-  width: 400px;
 }
 .list-group .list-group-item {
   position: relative;
