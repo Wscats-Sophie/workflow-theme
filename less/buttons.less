@@ -28,14 +28,14 @@
     }
     &.disabled,
     &[disabled],
-    fieldset[disabled] & {
-        cursor: not-allowed;
+    &.disabled:hover,
+    &[disabled]:hover {
         .opacity(.65);
         .box-shadow(none);
     }
     a& {
         &.disabled,
-        fieldset[disabled] & {
+        &[disabled] {
             pointer-events: none;
         }
     }

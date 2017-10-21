@@ -749,6 +749,7 @@ a.text-danger:focus {
   background-color: #eeeeee;
 }
 .table-responsive {
+  margin-top: 20px;
   overflow-x: auto;
   min-height: 0.01%;
 }
@@ -1584,15 +1585,15 @@ fieldset[disabled] .form-control {
 }
 .btn.disabled,
 .btn[disabled],
-fieldset[disabled] .btn {
-  cursor: not-allowed;
+.btn.disabled:hover,
+.btn[disabled]:hover {
   opacity: 0.65;
   filter: alpha(opacity=65);
   -webkit-box-shadow: none;
   box-shadow: none;
 }
 a.btn.disabled,
-fieldset[disabled] a.btn {
+a.btn[disabled] {
   pointer-events: none;
 }
 .btn.medium {
