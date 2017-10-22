@@ -40,6 +40,7 @@
                 }
             }
             &:last-child {
+                th,
                 td {
                     border-bottom: none;
                 }
@@ -52,6 +53,9 @@
                 }
             }
         }
+    }
+    thead:not(:last-child) tr th {
+        border-bottom: @table-cell-border;
     }
     &+.table {
         margin-left: 20px;
