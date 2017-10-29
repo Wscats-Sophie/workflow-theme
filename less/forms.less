@@ -24,29 +24,28 @@ select {
         display: inline-block;
         vertical-align: middle;
         padding: @form-group-padding 0 0 @form-group-padding;
+        a,
         input,
-        select,
-        button {
+        button,
+        select{
+            margin: 0;
+            padding: 2px 1em;
             height: 32px;
         }
-        input,
+        input[type="text"],
         select {
             display: inline-block;
             vertical-align: middle;
-            width: @form-inline-input-date-width;
+            width: 255px;
         }
         input[type="search"] {
             margin-right: 20px;
             width: 250px;
         }
-        button[type="submit"] {
-            margin: 0;
-            padding: 0 1em;
-        }
         &:first-child {
             padding: @form-group-padding 0 0 0;
         }
-        >.btn {
+        .btn {
             margin: 0 20px 0 0;
         }
         input+button {
