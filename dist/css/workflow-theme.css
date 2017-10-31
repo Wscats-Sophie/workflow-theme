@@ -196,6 +196,8 @@ th {
   -webkit-font-smoothing: antialiased;
 }
 * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 *:focus {
@@ -203,6 +205,8 @@ th {
 }
 *:before,
 *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 body {
@@ -210,7 +214,7 @@ body {
   color: #000000;
   background-color: #eeeeee;
   font-family: "MicrosoftYaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: bold;
   line-height: 1.428;
 }
@@ -547,6 +551,7 @@ a.text-danger:focus {
   margin-left: 20px;
   color: #999999;
   background-color: #ffffff;
+  -webkit-box-shadow: 0 0 30px 8px #bbb;
   box-shadow: 0 0 30px 8px #bbb;
   z-index: 2;
 }
@@ -675,7 +680,7 @@ a.text-danger:focus {
 .table tbody tr th,
 .table tfoot tr th {
   color: #333333;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: bold;
 }
 .table thead tr td,
@@ -1120,8 +1125,10 @@ select > option {
 .form-control:focus {
   border-color: #3280ff;
   outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px #3280ff;
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px #3280ff;
   -webkit-transition: border-color ease-in-out .05s, box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .05s, box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .05s, box-shadow ease-in-out .15s;
 }
 .form-control[disabled],
@@ -1154,10 +1161,12 @@ fieldset[disabled] .form-control {
 }
 .form-success .form-control {
   border-color: #3280ff;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 .form-success .form-control:focus {
   border-color: #0061fe;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #98bfff;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #98bfff;
 }
 .form-success .input-group-addon {
@@ -1182,10 +1191,12 @@ fieldset[disabled] .form-control {
 }
 .form-warning .form-control {
   border-color: #f0ad4e;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 .form-warning .form-control:focus {
   border-color: #ec971f;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #f8d9ac;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #f8d9ac;
 }
 .form-warning .input-group-addon {
@@ -1210,10 +1221,12 @@ fieldset[disabled] .form-control {
 }
 .form-error .form-control {
   border-color: #fe3d3d;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 .form-error .form-control:focus {
   border-color: #fe0a0a;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ffa2a2;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ffa2a2;
 }
 .form-error .input-group-addon {
@@ -1262,7 +1275,7 @@ fieldset[disabled] .form-control {
 }
 .input-group-addon {
   padding: 5px 1em;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: normal;
   line-height: 1;
   color: #999999;
@@ -1426,6 +1439,7 @@ fieldset[disabled] .form-control {
   border-radius: 20px;
   vertical-align: middle;
   overflow: hidden;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 .progress:before,
@@ -1457,19 +1471,23 @@ fieldset[disabled] .form-control {
   height: 100%;
   border-radius: 20px;
   background-color: #3280ff;
+  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   -webkit-transition: width 0.6s ease;
+  -o-transition: width 0.6s ease;
   transition: width 0.6s ease;
 }
 .progress-striped > .progress-bar,
 .progress-bar-striped {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-size: 20px 20px;
 }
 .progress.active > .progress-bar,
 .progress-bar.active {
   -webkit-animation: progress-bar-stripes 2s linear infinite;
+  -o-animation: progress-bar-stripes 2s linear infinite;
   animation: progress-bar-stripes 2s linear infinite;
 }
 .success {
@@ -1477,6 +1495,7 @@ fieldset[disabled] .form-control {
 }
 .progress-striped .success {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 .info {
@@ -1484,6 +1503,7 @@ fieldset[disabled] .form-control {
 }
 .progress-striped .info {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 .warning {
@@ -1491,6 +1511,7 @@ fieldset[disabled] .form-control {
 }
 .progress-striped .warning {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 .danger {
@@ -1498,6 +1519,7 @@ fieldset[disabled] .form-control {
 }
 .progress-striped .danger {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 @-webkit-keyframes progress-bar-stripes {
@@ -1538,6 +1560,7 @@ fieldset[disabled] .form-control {
   border: thin solid #eeeeee;
   border-radius: 6px;
   background-color: #eeeeee;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   font-size: 18px;
   font-weight: bold;
@@ -1553,7 +1576,7 @@ fieldset[disabled] .form-control {
   white-space: nowrap;
   padding: 2px 1.2em;
   border-radius: 5px;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.428;
 }
 .btn:active,
@@ -1571,6 +1594,7 @@ fieldset[disabled] .form-control {
 .btn[disabled]:hover {
   opacity: 0.65;
   filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
 a.btn.disabled,
@@ -2015,9 +2039,11 @@ input[type="button"].btn-block {
   padding-right: 12px;
 }
 .btn-group.open .dropdown-toggle {
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 .btn-group.open .dropdown-toggle.btn-link {
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
 .btn .caret {
@@ -2133,6 +2159,8 @@ input[type="button"].btn-block {
   height: 28px;
   border-radius: 50%;
   border: 2px solid #a6c4f6;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
   box-sizing: content-box;
   line-height: 1.8;
   font-weight: bold;
@@ -2207,14 +2235,18 @@ input[type="button"].btn-block {
 }
 .modal.fade .modal-dialog {
   -webkit-transform: translate(0, -25%);
+  -ms-transform: translate(0, -25%);
+  -o-transform: translate(0, -25%);
   transform: translate(0, -25%);
   -webkit-transition: -webkit-transform 0.3s ease-out;
-  transition: -webkit-transform 0.3s ease-out;
+  -moz-transition: -moz-transform 0.3s ease-out;
+  -o-transition: -o-transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
-  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
 }
 .modal.in .modal-dialog {
   -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
   transform: translate(0, 0);
 }
 .modal-open {
@@ -2234,6 +2266,7 @@ input[type="button"].btn-block {
   border: thin solid #eeeeee;
   background-color: #ffffff;
   background-clip: padding-box;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
   outline: 0;
 }
@@ -2328,7 +2361,7 @@ input[type="button"].btn-block {
   color: #000000;
   text-shadow: 0 1px 0 #ffffff;
   line-height: 2;
-  font-size: 21px;
+  font-size: 27px;
   font-weight: bold;
   opacity: 0.2;
   filter: alpha(opacity=20);
@@ -2376,10 +2409,11 @@ button.close {
   padding: 5px 0;
   margin: 2px 0 0;
   list-style: none;
-  font-size: 14px;
+  font-size: 18px;
   text-align: left;
   background-color: #ffffff;
   border: thin solid #eeeeee;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   background-clip: padding-box;
 }
@@ -2389,7 +2423,7 @@ button.close {
 }
 .dropdown-menu .divider {
   height: 1px;
-  margin: 8.5px 0;
+  margin: 11.5px 0;
   overflow: hidden;
   background-color: #e5e5e5;
 }
@@ -2660,6 +2694,9 @@ button.close {
   margin: 0;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 }
 .datepicker table tr td,
@@ -3516,8 +3553,7 @@ select.selectpicker {
 }
 .bootstrap-select.btn-group .dropdown-menu li a {
   cursor: pointer;
-  -webkit-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 .bootstrap-select.btn-group .dropdown-menu li a.opt {
   position: relative;

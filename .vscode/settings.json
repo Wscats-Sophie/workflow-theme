@@ -5,7 +5,7 @@
     "editor.formatOnSave": true,
     "editor.minimap.enabled": false,
     "html.format.extraLiners": "",
-    "html.format.wrapLineLength": 70,
+    "html.format.wrapLineLength": 120,
     "workbench.colorTheme": "Default Dark+",
     "workbench.startupEditor": "welcomePage",
     "workbench.iconTheme": "vs-seti",
@@ -17,5 +17,7 @@
         "compress": false,
         "out": "../dist/css/workflow-theme.css",
         "main": "./workflow-theme.less"
-    }
+    },
+    "html.format.preserveNewLines": false,
+    "html.format.unformatted": "img"
 }
