@@ -3,7 +3,7 @@ module.exports = function (grunt) {
         less: {
             dist: {
                 options: {
-                    paths:'dist/css',
+                    paths: 'dist/css',
                     sourceMap: true
                 },
                 files: {
@@ -20,7 +20,13 @@ module.exports = function (grunt) {
         },
         concat: {
             dist: {
-                src: ['js/*.js'],
+                src: [
+                    'js/dropdown.js',
+                    'js/modal.js',
+                    'js/tooltip.js',
+                    'js/popover.js',
+                    'js/*.js'
+                ],
                 dest: 'dist/js/workflow-theme.js',
             },
         },

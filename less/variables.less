@@ -6,7 +6,7 @@
 //== 字体
 @font-family-base:                  "MicrosoftYaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
 @font-size-small:                   12px;
-@font-size-base:                    18px;
+@font-size-base:                    14px;
 @font-size-medium:                  16px;
 @font-size-large:                   18px;
 
@@ -409,3 +409,18 @@
 @tooltip-arrow-width:               5px;
 @tooltip-arrow-color:               @tooltip-bg;
 @tooltip-zindex:                    1070;
+
+//== 弹窗框
+@popover-bg:                          #fff;
+@popover-max-width:                   276px;
+@popover-border-color:                rgba(0,0,0,.2);
+@popover-fallback-border-color:       #ccc;
+
+@popover-title-bg:                    darken(@popover-bg, 3%);
+
+@popover-arrow-width:                 10px;
+@popover-arrow-color:                 @popover-bg;
+@popover-arrow-outer-width:           (@popover-arrow-width + 1);
+@popover-arrow-outer-color:           fadein(@popover-border-color, 5%);
+@popover-arrow-outer-fallback-color:  darken(@popover-fallback-border-color, 20%);
+@popover-zindex:                      1060;
