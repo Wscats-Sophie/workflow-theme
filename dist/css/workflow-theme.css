@@ -719,6 +719,28 @@ a.text-danger:focus {
 .table tfoot tr td:last-child {
   border-right: none;
 }
+.table thead tr th.input,
+.table tbody tr th.input,
+.table tfoot tr th.input,
+.table thead tr td.input,
+.table tbody tr td.input,
+.table tfoot tr td.input {
+  padding: 0;
+}
+.table thead tr th.input input,
+.table tbody tr th.input input,
+.table tfoot tr th.input input,
+.table thead tr td.input input,
+.table tbody tr td.input input,
+.table tfoot tr td.input input,
+.table thead tr th.input select,
+.table tbody tr th.input select,
+.table tfoot tr th.input select,
+.table thead tr td.input select,
+.table tbody tr td.input select,
+.table tfoot tr td.input select {
+  padding: 8px 1em;
+}
 .table thead tr:last-child th,
 .table tbody tr:last-child th,
 .table tfoot tr:last-child th,
