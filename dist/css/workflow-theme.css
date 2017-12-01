@@ -1476,11 +1476,6 @@ a.text-danger:focus {
 .table tfoot tr td {
   color: #999999;
 }
-.table thead tr td a.btn,
-.table tbody tr td a.btn,
-.table tfoot tr td a.btn {
-  margin: 0 1em 0 0;
-}
 .table thead tr th,
 .table tbody tr th,
 .table tfoot tr th,
@@ -1568,14 +1563,6 @@ a.text-danger:focus {
   margin-top: 20px;
   overflow-x: auto;
   min-height: 0.01%;
-}
-.table-action thead tr th:last-child,
-.table-action tbody tr th:last-child,
-.table-action tfoot tr th:last-child,
-.table-action thead tr td:last-child,
-.table-action tbody tr td:last-child,
-.table-action tfoot tr td:last-child {
-  width: 400px;
 }
 .table > thead > tr > td.active,
 .table > tbody > tr > td.active,
