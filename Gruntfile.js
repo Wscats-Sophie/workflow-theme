@@ -1,4 +1,4 @@
-module.exports = function (grunt) {
+module.exports = function(grunt) {
     grunt.initConfig({
         less: {
             dist: {
@@ -14,7 +14,9 @@ module.exports = function (grunt) {
         cssmin: {
             dist: {
                 files: {
-                    'dist/css/workflow-theme.min.css': ['dist/css/workflow-theme.css']
+                    'dist/css/workflow-theme.min.css': [
+                        'dist/css/workflow-theme.css'
+                    ]
                 }
             }
         },
@@ -44,6 +46,8 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
 
-    grunt.registerTask('default', ['cssmin:dist', 'concat:dist', 'uglify:dist']);
+    grunt.registerTask('default', ['cssmin:dist', 'concat:dist',
+        'uglify:dist'
+    ]);
     grunt.registerTask('less', ['less:dist']);
 }

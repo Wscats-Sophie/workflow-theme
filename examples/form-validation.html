@@ -32,21 +32,21 @@
                 username: '用户名不能为空',
                 password: '密码不能为空'
             },
-            invalidHandler: function (e, validator) {
-                $.each(validator.errorList, function (index, item) {
+            invalidHandler: function(e, validator) {
+                $.each(validator.errorList, function(index, item) {
                     $(item.element)
                         .closest('.form-group')
                         .removeClass('form-success')
                         .addClass('form-error');
                 });
             },
-            success: function (label) {
+            success: function(label) {
                 $(label)
                     .closest('.form-group')
                     .removeClass('form-error')
                     .addClass('form-success');
             },
-            submitHandler: function (form) {
+            submitHandler: function(form) {
                 form.submit();
             },
             message: false
