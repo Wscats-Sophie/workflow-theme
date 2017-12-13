@@ -52,6 +52,24 @@ small,
     .text-emphasis-variant(@danger);
 }
 
+.bg-primary {
+    color: #fff;
+    .bg-variant(@primary);
+  }
+  .bg-success {
+    .bg-variant(@state-success-bg);
+  }
+  .bg-info {
+    .bg-variant(@state-info-bg);
+  }
+  .bg-warning {
+    .bg-variant(@state-warning-bg);
+  }
+  .bg-danger {
+    .bg-variant(@state-danger-bg);
+  }
+  
+
 .page-header {
     padding: @page-header-padding;
     border-bottom: @page-header-border-bottom;

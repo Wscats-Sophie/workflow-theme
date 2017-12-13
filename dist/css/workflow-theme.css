@@ -1119,6 +1119,42 @@ a.text-danger:hover,
 a.text-danger:focus {
   color: #fe0a0a;
 }
+.bg-primary {
+  color: #fff;
+  background-color: #3280ff;
+}
+a.bg-primary:hover,
+a.bg-primary:focus {
+  background-color: #0061fe;
+}
+.bg-success {
+  background-color: #dff0d8;
+}
+a.bg-success:hover,
+a.bg-success:focus {
+  background-color: #c1e2b3;
+}
+.bg-info {
+  background-color: #d9edf7;
+}
+a.bg-info:hover,
+a.bg-info:focus {
+  background-color: #afd9ee;
+}
+.bg-warning {
+  background-color: #fcf8e3;
+}
+a.bg-warning:hover,
+a.bg-warning:focus {
+  background-color: #f7ecb5;
+}
+.bg-danger {
+  background-color: #f2dede;
+}
+a.bg-danger:hover,
+a.bg-danger:focus {
+  background-color: #e4b9b9;
+}
 .page-header {
   padding: 0 0 10px;
   border-bottom: thin solid #eeeeee;
@@ -1524,6 +1560,14 @@ a.text-danger:focus {
 .table tfoot tr td.input select {
   padding: 8px 1em;
 }
+.table thead tr th:last-child,
+.table tbody tr th:last-child,
+.table tfoot tr th:last-child,
+.table thead tr td:last-child,
+.table tbody tr td:last-child,
+.table tfoot tr td:last-child {
+  overflow: visible;
+}
 .table thead tr:last-child th,
 .table tbody tr:last-child th,
 .table tfoot tr:last-child th,
@@ -1669,28 +1713,28 @@ a.text-danger:focus {
 .table-hover > tbody > tr.danger:hover > th {
   background-color: #ebcccc;
 }
-.list-group .list-group-item {
+.list-group-item {
   position: relative;
   display: block;
   margin-bottom: -1px;
   border: thin solid #eeeeee;
   background-color: #ffffff;
 }
-.list-group .list-group-item:first-child {
+.list-group-item:first-child {
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
 }
-.list-group .list-group-item:last-child {
+.list-group-item:last-child {
   margin-bottom: 0;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
 }
-.list-group .list-group-item > ul {
+.list-group-item > ul {
   display: table;
   table-layout: fixed;
   width: 100%;
 }
-.list-group .list-group-item > ul > li {
+.list-group-item > ul > li {
   position: relative;
   display: table-cell;
   padding: 10px 1em;
@@ -1701,26 +1745,32 @@ a.text-danger:focus {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.list-group .list-group-item > ul > li:not(:last-child) {
+.list-group-item > ul > li:not(:last-child) {
   border-right: thin solid #eeeeee;
 }
-.list-group .list-group-item > ul > li > img {
+.list-group-item > ul > li > img {
+  position: absolute;
+  top: 10px;
+  left: 1em;
   width: 20px;
   height: 20px;
-  margin: 0 1em 0 0;
+  margin: 0;
 }
-.list-group .list-group-item > ul:not(.list-group-item-heading) > li:first-child {
+.list-group-item > ul > li:last-child {
+  overflow: visible;
+}
+ > ul:not(.list-group-item-heading) > li:first-child {
   text-align: left;
 }
-.list-group .list-group-item .list-group-item-heading > li {
+.list-group-item-heading > li {
   color: #333333;
 }
-.list-group a.list-group-item :hover li,
-.list-group a.list-group-item :focus li {
+a.list-group :hover li,
+a.list-group :focus li {
   color: #333333;
   text-decoration: none;
 }
-.list-group button.list-group-item {
+button.list-group {
   width: 100%;
   text-align: left;
 }
@@ -2432,56 +2482,56 @@ a.btn[disabled] {
   height: 24px;
   margin: 0 1em;
 }
-.btn-defalut {
+.btn-default {
   border: thin solid #3280ff;
   color: #3280ff;
   background: #ffffff;
 }
-.btn-defalut:focus,
-.btn-defalut.focus {
+.btn-default:focus,
+.btn-default.focus {
   color: #3280ff;
   background: #ffffff;
 }
-.btn-defalut:hover {
+.btn-default:hover {
   color: #3280ff;
   background: #ffffff;
 }
-.btn-defalut:active,
-.btn-defalut.active,
-.open > .dropdown-toggle.btn-defalut {
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
   color: #3280ff;
   background: #e6e6e6;
 }
-.btn-defalut:active:hover,
-.btn-defalut.active:hover,
-.open > .dropdown-toggle.btn-defalut:hover,
-.btn-defalut:active:focus,
-.btn-defalut.active:focus,
-.open > .dropdown-toggle.btn-defalut:focus,
-.btn-defalut:active.focus,
-.btn-defalut.active.focus,
-.open > .dropdown-toggle.btn-defalut.focus {
+.btn-default:active:hover,
+.btn-default.active:hover,
+.open > .dropdown-toggle.btn-default:hover,
+.btn-default:active:focus,
+.btn-default.active:focus,
+.open > .dropdown-toggle.btn-default:focus,
+.btn-default:active.focus,
+.btn-default.active.focus,
+.open > .dropdown-toggle.btn-default.focus {
   color: #3280ff;
   background: #d4d4d4;
 }
-.btn-defalut:active,
-.btn-defalut.active,
-.open > .dropdown-toggle.btn-defalut {
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
   background-image: none;
 }
-.btn-defalut.disabled:hover,
-.btn-defalut[disabled]:hover,
-fieldset[disabled] .btn-defalut:hover,
-.btn-defalut.disabled:focus,
-.btn-defalut[disabled]:focus,
-fieldset[disabled] .btn-defalut:focus,
-.btn-defalut.disabled.focus,
-.btn-defalut[disabled].focus,
-fieldset[disabled] .btn-defalut.focus {
+.btn-default.disabled:hover,
+.btn-default[disabled]:hover,
+fieldset[disabled] .btn-default:hover,
+.btn-default.disabled:focus,
+.btn-default[disabled]:focus,
+fieldset[disabled] .btn-default:focus,
+.btn-default.disabled.focus,
+.btn-default[disabled].focus,
+fieldset[disabled] .btn-default.focus {
   border: thin solid #3280ff;
   background: #ffffff;
 }
-.btn-defalut .badge {
+.btn-default .badge {
   color: #ffffff;
   background: #3280ff;
 }

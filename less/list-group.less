@@ -4,7 +4,7 @@
 @import "variables.less";
 @import "mixins.less";
 .list-group {
-    .list-group-item {
+    &-item {
         position: relative;
         display: block;
         margin-bottom: -1px;
@@ -33,27 +33,33 @@
                     border-right: @list-group-border;
                 }
                 >img {
-                    .icon(20px, 0 1em 0 0);
+                    position: absolute;
+                    top: 10px;
+                    left: 1em;
+                    .icon(20px, 0);
                 }
             }
+            >li:last-child {
+                overflow: visible;
+            }
         }
-        >ul:not(.list-group-item-heading)>li:first-child {
+        >ul:not(&-heading)>li:first-child {
             text-align: left;
         }
-        .list-group-item-heading {
+        &-heading {
             >li {
                 color: @list-group-item-heading-color;
             }
         }
     }
-    a.list-group-item {
+    a& {
          :hover li,
          :focus li {
             color: @list-group-item-hover-color;
             text-decoration: none;
         }
     }
-    button.list-group-item {
+    button& {
         width: 100%;
         text-align: left;
     }

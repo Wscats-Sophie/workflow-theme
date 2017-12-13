@@ -3,7 +3,6 @@
     "files.autoSave": "afterDelay",
     "explorer.openEditors.visible": 0,
     "editor.formatOnSave": true,
-    "editor.minimap.enabled": false,
     "workbench.colorTheme": "Default Dark+",
     "workbench.startupEditor": "welcomePage",
     "workbench.iconTheme": "vs-seti",
