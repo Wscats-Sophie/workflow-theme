@@ -4,7 +4,6 @@
     "explorer.openEditors.visible": 0,
     "editor.formatOnSave": true,
     "workbench.colorTheme": "Default Dark+",
-    "workbench.startupEditor": "welcomePage",
     "workbench.iconTheme": "vs-seti",
     "explorer.autoReveal": false,
     "git.confirmSync": false,
