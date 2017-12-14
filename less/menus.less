@@ -1,8 +1,8 @@
+@import "variables.less";
+@import "mixins.less";
 //
 // 菜单
 // 
-@import "variables.less";
-@import "mixins.less";
 .menu {
     position: absolute;
     min-height: @menu-min-height;
@@ -10,6 +10,7 @@
     margin-left: @menu-margin-left;
     color: @menu-color;
     background-color: @menu-bg;
+    font-size: @font-size-large;
     .box-shadow(@menu-box-shadow);
     z-index: 2;
     .nested {
@@ -48,7 +49,6 @@
         position: absolute;
         right: 20px;
         top: 15px;
-        
         border-top: none;
         border-bottom: 4px solid @gray;
     }

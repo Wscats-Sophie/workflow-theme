@@ -1291,6 +1291,7 @@ a.bg-danger:focus {
   margin-bottom: 20px;
   color: #999999;
   background: #ffffff;
+  font-size: 1.3em;
 }
 .navbar:before,
 .navbar:after {
@@ -1313,7 +1314,6 @@ a.bg-danger:focus {
   height: 100%;
   width: 60px;
   margin-left: 20px;
-  line-height: 3;
   background: #eeeeee;
   text-align: center;
 }
@@ -1321,11 +1321,12 @@ a.bg-danger:focus {
   width: 32px;
   height: 32px;
   margin: 0;
+  margin-top: 6.5px;
+  margin-bottom: 6.5px;
 }
 .navbar-nav {
   float: left;
   margin-left: 20px;
-  line-height: 3;
   color: #333333;
 }
 .navbar-nav:before,
@@ -1348,12 +1349,12 @@ a.bg-danger:focus {
   float: left;
   display: block;
   height: 45px;
-  padding: 0 6px;
+  padding: 10px 6px;
 }
 .navbar-nav > li:nth-child(2) > img {
   width: 16px;
   height: 16px;
-  margin: 0;
+  margin: 0 0 10px 0;
 }
 .navbar-nav > li > a > img,
 .navbar-nav > li > img {
@@ -1362,8 +1363,8 @@ a.bg-danger:focus {
   margin: 0;
 }
 .navbar-text {
-  padding: 12px 20px;
   border-left: thin solid #eeeeee;
+  padding: 10px 20px;
 }
 .navbar-text > span:first-child {
   margin-right: 20px;
@@ -1375,6 +1376,7 @@ a.bg-danger:focus {
   margin-left: 20px;
   color: #999999;
   background-color: #ffffff;
+  font-size: 18px;
   -webkit-box-shadow: 0 0 30px 8px #bbb;
   box-shadow: 0 0 30px 8px #bbb;
   z-index: 2;
@@ -1481,11 +1483,6 @@ a.bg-danger:focus {
   background: #ffffff;
   overflow-y: auto;
 }
-.table-overflow > tbody > tr > td {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
 .decoration-bar {
   position: absolute;
   height: 45px;
@@ -1559,6 +1556,22 @@ a.bg-danger:focus {
 .table tbody tr td.input select,
 .table tfoot tr td.input select {
   padding: 8px 1em;
+}
+.table thead tr td:first-child,
+.table tbody tr td:first-child,
+.table tfoot tr td:first-child {
+  position: relative;
+  padding-left: 2.5em;
+}
+.table thead tr td:first-child img,
+.table tbody tr td:first-child img,
+.table tfoot tr td:first-child img {
+  position: absolute;
+  left: 1em;
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  cursor: pointer;
 }
 .table thead tr th:last-child,
 .table tbody tr th:last-child,

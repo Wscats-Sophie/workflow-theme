@@ -1,18 +1,17 @@
-﻿//
+﻿@import "variables.less";
+@import "mixins.less";
+//
 // 导航栏
 //
-
-@import "variables.less";
-@import "mixins.less";
-
 .navbar {
     position: absolute;
     height: @navbar-height;
     min-width: @navbar-min-width;
-    width:100%;
+    width: 100%;
     margin-bottom: @navbar-margin-bottom;
     color: @navbar-color;
     background: @navbar-bg;
+    font-size: 1.3em;
     .clearfix;
 }
 
@@ -21,44 +20,38 @@
     height: 100%;
     width: @navbar-brand-width;
     margin-left: @navbar-brand-margin-left;
-    line-height: @navbar-brand-line-height;
     background: @navbar-brand-bg;
     text-align: center;
-
-    > img {
+    >img {
         .icon(32px, 0);
+        .navbar-vertical-align(32px);
     }
 }
 
 .navbar-nav {
     float: left;
     margin-left: @navbar-nav-margin-left;
-    line-height: @navbar-nav-line-width;
     color: @navbar-nav-color;
     .clearfix;
-
-    > li {
+    >li {
         float: left;
         display: block;
         height: @navbar-height;
         padding: @navbar-nav-padding;
-
-        &:nth-child(2) > img {
-            .icon(16px, 0);
+        &:nth-child(2)>img {
+            .icon(16px, 0 0 10px 0);
         }
-
-        > a > img,
-        > img {
+        >a>img,
+        >img {
             .icon(24px, 0);
         }
     }
 }
 
 .navbar-text {
-    padding: @navbar-text-padding;
     border-left: @navbar-text-border;
-
-    > span:first-child {
+    padding: @navbar-text-padding;
+    >span:first-child {
         margin-right: 20px;
     }
 }
