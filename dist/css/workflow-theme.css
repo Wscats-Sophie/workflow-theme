@@ -1772,7 +1772,7 @@ a.bg-danger:focus {
 .list-group-item > ul > li:last-child {
   overflow: visible;
 }
- > ul:not(.list-group-item-heading) > li:first-child {
+.list-group-item > ul:not(.list-group-item-heading) > li:first-child {
   text-align: left;
 }
 .list-group-item-heading > li {
@@ -1963,12 +1963,12 @@ select > option {
 .form-group:after {
   clear: both;
 }
-.form-group img {
+.form-group > img {
   width: 24px;
   height: 24px;
   margin: 0 5px;
 }
-.form-group .btn {
+.form-group > .btn {
   margin: 0 20px 0 0;
 }
 .form-label {
