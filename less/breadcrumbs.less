@@ -1,27 +1,21 @@
 //
 // 路径导航
 //
-
 @import "variables.less";
 @import "mixins.less";
-
 .breadcrumb {
     padding: 0 2em;
-
-    > li {
+    >li {
         display: inline-block;
         height: 45px;
         line-height: 3;
-        
-
-        + li:before {
+        +li:before {
             padding: 0 5px;
             color: rebeccapurple;
             content: "/\00a0";
         }
     }
-
-    > .active {
+    >.active {
         color: @breadcrumb-active-color;
     }
 }

@@ -8,6 +8,7 @@
     "explorer.autoReveal": false,
     "git.confirmSync": false,
     "git.enableSmartCommit": true,
+    "git.autofetch": true,
     "less.compile": {
         "sourceMap": true,
         "compress": false,

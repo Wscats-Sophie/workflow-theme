@@ -1,9 +1,9 @@
-﻿//
-// 表格
-//
-@import "variables.less";
+﻿@import "variables.less";
 @import "mixins.less";
 @import "types.less";
+//
+// 表格
+//
 .table {
     width: 100%;
     border-collapse: separate;
@@ -85,10 +85,28 @@
     }
 }
 
+.table-condensed {
+    thead,
+    tbody,
+    tfoot {
+        tr {
+            th,
+            td {
+                padding: @table-condensed-cell-padding;
+                font-size: @table-condensed-cell-font-size;
+            }
+        }
+    }
+}
+
 .table-hover {
     tbody tr:hover {
         background-color: @table-hover-bg;
     }
+}
+
+.table-visable {
+    overflow: visible;
 }
 
 .table-responsive {

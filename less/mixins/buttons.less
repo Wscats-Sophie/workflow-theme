@@ -1,29 +1,24 @@
 //
 // 按钮变换
 //
-
-.button-variant(@border; @color; @background) {
-    border:  @border;
+.button-variant(@border, @color, @background) {
+    border: @border;
     color: @color;
     background: @background;
-
     &:focus,
     &.focus {
         color: @color;
         background: @background;
     }
-
     &:hover {
         color: @color;
         background: @background;
     }
-
     &:active,
     &.active,
-    .open > .dropdown-toggle& {
+    .open>.dropdown-toggle& {
         color: @color;
         background: darken(@background, 10%);
-
         &:hover,
         &:focus,
         &.focus {
@@ -31,13 +26,11 @@
             background: darken(@background, 17%);
         }
     }
-
     &:active,
     &.active,
-    .open > .dropdown-toggle& {
+    .open>.dropdown-toggle& {
         background-image: none;
     }
-
     &.disabled,
     &[disabled],
     fieldset[disabled] & {
@@ -48,14 +41,16 @@
             background: @background;
         }
     }
-
     .badge {
         color: @background;
         background: @color;
     }
 }
 
-.button-size(@padding; @border-radius; @font-size; @line-height) {
+.button-size(@padding;
+@border-radius;
+@font-size;
+@line-height) {
     padding: @padding;
     border-radius: @border-radius;
     font-size: @font-size;

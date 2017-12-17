@@ -1,14 +1,10 @@
 //
 // 脚手架
 // 
-
 @import "variables.less";
 @import "mixins.less";
-
-
 * {
     .box-sizing(border-box);
-
     &:focus {
         outline: none
     }
@@ -44,7 +40,6 @@ textarea {
 a {
     color: @link-color;
     text-decoration: none;
-
     &:hover,
     &:focus {
         color: @link-hover-color;
@@ -59,7 +54,6 @@ ol {
     padding: 0;
     list-style: none;
 }
-
 
 // 
 figure {
@@ -82,7 +76,6 @@ hr {
 //
 //
 //
-
 .sr-only {
     position: absolute;
     width: 1px;
@@ -90,14 +83,13 @@ hr {
     margin: -1px;
     padding: 0;
     overflow: hidden;
-    clip: rect(0,0,0,0);
+    clip: rect(0, 0, 0, 0);
     border: 0;
 }
 
 // Use in conjunction with .sr-only to only display content when it's focused.
 // Useful for "Skip to main content" links; see http://www.w3.org/TR/2013/NOTE-WCAG20-TECHS-20130905/G1
 // Credit: HTML5 Boilerplate
-
 .sr-only-focusable {
     &:active,
     &:focus {
@@ -115,7 +107,6 @@ hr {
 // Fixes "clickability" issue (and more generally, the firing of events such as focus as well)
 // for traditionally non-focusable elements with role="button"
 // see https://developer.mozilla.org/en-US/docs/Web/Events/click#Safari_Mobile
-
 [role="button"] {
     cursor: pointer;
 }

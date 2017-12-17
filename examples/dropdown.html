@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DropDown Menu</title>
+    <link rel="stylesheet" href="css/division.css">
+    <link rel="stylesheet" href="../dist/css/workflow-theme.css">
+</head>
+<body>
+    <section>
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary">主要的</button>
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#">连接1</a></li>
+                <li class="disabled"><a href="#">连接2 禁用</a></li>
+                <li class="disabled"><a  href="#">连接3 禁用</a></li>
+                <li class="divider" role="separator"></li>
+                <li><a href="#">连接4</a></li>
+            </ul>
+        </div>
+    </section>
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/bootstrap/js/dropdown.js"></script>
+</body>
+</html>

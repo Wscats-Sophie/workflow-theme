@@ -1,8 +1,8 @@
-﻿//
+﻿@import "variables.less";
+@import "mixins.less";
+//
 // 排版
 //
-@import "variables.less";
-@import "mixins.less";
 // 小号字符
 small,
 .small {
@@ -55,20 +55,23 @@ small,
 .bg-primary {
     color: #fff;
     .bg-variant(@primary);
-  }
-  .bg-success {
+}
+
+.bg-success {
     .bg-variant(@state-success-bg);
-  }
-  .bg-info {
+}
+
+.bg-info {
     .bg-variant(@state-info-bg);
-  }
-  .bg-warning {
+}
+
+.bg-warning {
     .bg-variant(@state-warning-bg);
-  }
-  .bg-danger {
+}
+
+.bg-danger {
     .bg-variant(@state-danger-bg);
-  }
-  
+}
 
 .page-header {
     padding: @page-header-padding;
