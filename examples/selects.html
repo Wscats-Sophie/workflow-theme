@@ -31,13 +31,53 @@
             </optgroup>
         </select>
     </section>
+    <section>
+        <div class="row">
+            <div class="column-3">
+                <div class="form-group">
+                    <img src="" alt="department">
+                    <label class="form-label" for="department-id">A</label>
+                    <select class="form-control" id="department-id">
+                        <option value="00000000-0000-0000-0000-000000000000"></option>
+                    </select>
+                </div>
+            </div>
+            <div class="column-3">
+                <div class="form-group">
+                    <img src="/images/organization.png" alt="persons">
+                    <label class="form-label" for="person-id">AA</label>
+                    <select class="form-control selectpicker" id="person-id" multiple>
+                        <option value="0-0000-0000-0000-000000000000">AA1</option>
+                        <option value="0-0000-0000-0000-000000000000">AA2</option>
+                        <option value="0-0000-0000-0000-000000000000">AA1</option>
+                        <option value="0-0000-0000-0000-000000000000">AA2</option>
+                    </select>
+                </div>
+            </div>
+            <div class="column-3">
+                <div class="form-group">
+                    <img src="/images/header.png" alt="header">
+                    <label class="form-label" for="auditor">B</label>
+                    <select class="form-control" id="auditor">
+                        <option value="0-0000-0000-0000-000000000000"></option>
+                    </select>
+                </div>
+            </div>
+            <div class="column-1">
+                <div class="form-group">
+                    <button class="btn btn-danger" type="button" data-target="remove">
+                        <img src="/images/remove.png" alt="remove">删除
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="../bower_components/jquery/dist/jquery.js"></script>
     <script src="../dist/js/workflow-theme.js"></script>
     <script>
         $(document).ready(function() {
-            $('.selectpicker').selectpicker();
-
-        })
+            $('.selectpicker').selectpicker([1, 2, 3, 4]);
+        });
     </script>
 </body>
 </html>
