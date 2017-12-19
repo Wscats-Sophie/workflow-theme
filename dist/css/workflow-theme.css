@@ -1560,14 +1560,11 @@ a.bg-danger:focus {
 .table thead tr td:first-child,
 .table tbody tr td:first-child,
 .table tfoot tr td:first-child {
-  position: relative;
-  padding-left: 2.5em;
+  text-align: left;
 }
 .table thead tr td:first-child img,
 .table tbody tr td:first-child img,
 .table tfoot tr td:first-child img {
-  position: absolute;
-  left: 1em;
   width: 16px;
   height: 16px;
   margin: 0;
@@ -1580,14 +1577,6 @@ a.bg-danger:focus {
 .table tbody tr td:last-child,
 .table tfoot tr td:last-child {
   overflow: visible;
-}
-.table thead tr:last-child th,
-.table tbody tr:last-child th,
-.table tfoot tr:last-child th,
-.table thead tr:last-child td,
-.table tbody tr:last-child td,
-.table tfoot tr:last-child td {
-  border-bottom: none;
 }
 .table thead tr.danger,
 .table tbody tr.danger,
