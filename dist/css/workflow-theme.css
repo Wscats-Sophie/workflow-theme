@@ -1495,6 +1495,7 @@ a.bg-danger:focus {
   width: 100%;
   border-collapse: separate;
   border: thin solid #eeeeee;
+  border-bottom: none;
   border-radius: 5px;
 }
 .table thead tr th,
@@ -1569,14 +1570,6 @@ a.bg-danger:focus {
   height: 16px;
   margin: 0;
   cursor: pointer;
-}
-.table thead tr th:last-child,
-.table tbody tr th:last-child,
-.table tfoot tr th:last-child,
-.table thead tr td:last-child,
-.table tbody tr td:last-child,
-.table tfoot tr td:last-child {
-  overflow: visible;
 }
 .table thead tr.danger,
 .table tbody tr.danger,

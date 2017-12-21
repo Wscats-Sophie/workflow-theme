@@ -8,6 +8,7 @@
     width: 100%;
     border-collapse: separate;
     border: @table-cell-border;
+    border-bottom: none;
     border-radius: @table-border-radius;
     thead,
     tbody,
@@ -49,10 +50,6 @@
                     .icon(16px, 0);
                     cursor: pointer;
                 }
-            }
-            th:last-child,
-            td:last-child {
-                overflow: visible;
             }
             &.danger {
                 background: none;
