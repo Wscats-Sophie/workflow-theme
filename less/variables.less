@@ -54,8 +54,29 @@
 @icon-font-name:                    "glyphicons-halflings-regular";
 @icon-font-svg-id:                  "glyphicons_halflingsregular";
 
+//== 媒体查询断点
+@screen-xs:                         480px;
+@screen-xs-min:                     @screen-xs;
+@screen-phone:                      @screen-xs-min;
+
+@screen-sm:                         768px;
+@screen-sm-min:                     @screen-sm;
+@screen-tablet:                     @screen-sm-min;
+
+@screen-md:                         992px;
+@screen-md-min:                     @screen-md;
+@screen-desktop:                    @screen-md-min;
+
+@screen-lg:                         1200px;
+@screen-lg-min:                     @screen-lg;
+@screen-lg-desktop:                 @screen-lg-min;
+
+@screen-xs-max:                     (@screen-sm-min - 1);
+@screen-sm-max:                     (@screen-md-min - 1);
+@screen-md-max:                     (@screen-lg-min - 1);
+
 //== 组件
-@component-full-width:              1400px;
+@component-full-width:              @screen-md;
 @component-height:                  45px;
 @component-margin:                  20px;
 @component-padding:                 20px;
@@ -115,7 +136,7 @@
 
 //== 菜单
 @menu-width:                        230px;
-@menu-min-height:                   @tab-header-height + @component-margin + @tab-content-height;
+@menu-min-height:                   @component-height + @component-margin + @tab-content-height;
 @menu-margin-left:                  @component-margin;
 @menu-color:                        @component-color;
 @menu-bg:                           @component-bg;

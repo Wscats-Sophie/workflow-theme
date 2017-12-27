@@ -7,7 +7,7 @@ module.exports = function(grunt) {
                     sourceMap: true
                 },
                 files: {
-                    'dist/css/workflow-theme.css': 'less/test.less'
+                    'dist/css/workflow-theme.css': 'less/workflow-theme.less'
                 }
             }
         },
@@ -46,8 +46,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
 
-    grunt.registerTask('default', ['cssmin:dist', 'concat:dist',
-        'uglify:dist'
-    ]);
+    grunt.registerTask('default', ['cssmin:dist', 'concat:dist', 'uglify:dist']);
     grunt.registerTask('less', ['less:dist']);
 }

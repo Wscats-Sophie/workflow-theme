@@ -7,82 +7,62 @@
     <link rel="stylesheet" href="../dist/css/workflow-theme.css">
 </head>
 <body>
+    <div class="navbar">Navbar</div>
     <div class="container">
         <div class="decoration-bar"></div>
-        <ul class="menu">
-            <li class="menu-header">
+        <div class="menu">
+            <div class="menu-header">
                 <ol class="breadcrumb">
-                    <li>
-                        <a asp-action="Index" asp-controller="@Menu.Home" data-target="menu">主页</a>
-                    </li>
+                    <li><a href="/"><span class="hidden-md hidden-sm hidden-xs">Home</span></a></li>
                 </ol>
-            </li>
-            <li>
-                <a class="menu-item" href="/">AAAA</a>
-            </li>
-            <li>
-                <a class="menu-item expand" href="/">BBBB
-                    <span class="caret"></span>
-                </a>
-                <ul class="menu nested">
-                    <li>
-                        <a class="menu-item active" href="/">BBBB-1</a>
-                    </li>
-                    <li>
-                        <a class="menu-item" href="/">BBBB-2</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a class="menu-item" href="/">CCCC
-                    <span class="caret"></span>
-                </a>
-                <ul class="menu nested">
-                    <li>
-                        <a class="menu-item" href="/">CCCC-1</a>
-                        <a class="menu-item" href="/">CCCC-2</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a class="menu-item" href="/">DDDD
-                    <span class="caret"></span>
-                </a>
-                <ul class="menu nested">
-                    <li>
-                        <a class="menu-item" href="/">DDDD-1</a>
-                    </li>
-                    <li>
-                        <a class="menu-item" href="/">DDDD-2</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a class="menu-item" href="/">EEEE
-                    <span class="caret"></span>
-                </a>
-                <ul class="menu nested">
-                    <li>
-                        <a class="menu-item" href="/">EEEE-1</a>
-                    </li>
-                    <li>
-                        <a class="menu-item" href="/">EEEE-2</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a class="menu-item" href="/">FFFF</a>
-            </li>
-            <li>
-                <a class="menu-item" href="/">GGGG</a>
-            </li>
-        </ul>
+            </div>
+            <a class="menu-item " href="/First" data-toggle="popover" data-content="FirstFirstFirstFirstFirstFirstFirstFirstFirst">
+                <img src="images/placeholder.jpg" alt="task 1"><span class="hidden-md hidden-sm hidden-xs">First</span>                
+            </a>
+            <a class="menu-item " href="/Second" data-toggle="popover" data-content="First">
+                <img src="images/placeholder.jpg" alt="task 2"><span class="hidden-md hidden-sm hidden-xs">Second</span>
+            </a>
+            <a class="menu-item " href="/Third" data-toggle="popover" data-content="First">
+                <img src="images/placeholder.jpg" alt="task 3"><span class="hidden-md hidden-sm hidden-xs">Third</span>
+            </a>
+            <a class="menu-item " href="/Fourth" data-toggle="popover" data-content="First">
+                <img src="images/placeholder.jpg" alt="task 4"><span class="hidden-md hidden-sm hidden-xs">Fourth</span>
+            </a>
+            <a class="menu-item " href="/Fifth" data-toggle="popover" data-content="First">
+                <img src="images/placeholder.jpg" alt="task 5"><span class="hidden-md hidden-sm hidden-xs">Fifth</span>
+            </a>
+            <a class="menu-item " href="/Sixth" data-toggle="popover" data-content="First">
+                <img src="images/placeholder.jpg" alt="task 6"><span class="hidden-md hidden-sm hidden-xs">Sixth</span>
+            </a>
+            <a class="menu-item " href="/seventh" data-toggle="popover" data-content="First">
+                <img src="images/placeholder.jpg" alt="task 7"><span class="hidden-md hidden-sm hidden-xs">Seventh</span>
+            </a>
+            <a class="menu-item " href="/Eighth" data-toggle="popover" data-content="First">
+                <img src="images/placeholder.jpg" alt="task 8"><span class="hidden-md hidden-sm hidden-xs">Eighth</span>
+            </a>
+        </div>
         <div class="tab">
-            <div class="tab-header"></div>
+            <div class="tab-header">Tab Header</div>
             <div class="tab-content">
-
+                Tab Content
+                <div class="popover top" style="display:block; top:200px; left:200px;">
+                    <div class="arrow"></div>
+                    <h3 class="popover-title">Popover 顶部</h3>
+                    <div class="popover-content">
+                        <p>Sed posuere consectetur est at lobortis. Aenean eu leo quam.
+                            Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/bootstrap/js/tooltip.js"></script>
+    <script src="../bower_components/bootstrap/js/popover.js"></script>
+    <script>
+        $('[data-toggle="popover"]').popover({
+            trigger: 'hover | focus '
+        });
+    </script>
 </body>
 </html>

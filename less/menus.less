@@ -20,6 +20,9 @@
         width: 210px;
         box-shadow: 0 0 0;
     }
+    @media screen and (min-width: 0) and (max-width: @screen-md-max) {
+        width: 60px;
+    }
 }
 
 .menu-header {
@@ -59,6 +62,11 @@
         }
         +.nested {
             display: block;
+        }
+    }
+    @media screen and (min-width: 0) and (max-width: @screen-md-max) {
+        & {
+            padding: 8px 0;
         }
     }
 }
