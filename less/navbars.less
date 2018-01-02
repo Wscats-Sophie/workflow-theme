@@ -1,5 +1,6 @@
 ﻿@import "variables.less";
 @import "mixins.less";
+@import "utilities.less";
 //
 // 导航栏
 //
@@ -38,11 +39,15 @@
         display: block;
         height: @navbar-height;
         padding: @navbar-nav-padding;
-        >a>img {
+        >a img {
             .icon(24px, 0);
         }
         >img {
-            .icon(16px, 0);
+            .icon(16px, 4.5px 0);
+        }
+        a,
+        img {
+            display: block;
         }
     }
 }

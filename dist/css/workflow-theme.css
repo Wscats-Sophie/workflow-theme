@@ -1351,7 +1351,7 @@ a.bg-danger:focus {
   height: 45px;
   padding: 10px 6px;
 }
-.navbar-nav > li > a > img {
+.navbar-nav > li > a img {
   width: 24px;
   height: 24px;
   margin: 0;
@@ -1359,7 +1359,11 @@ a.bg-danger:focus {
 .navbar-nav > li > img {
   width: 16px;
   height: 16px;
-  margin: 0;
+  margin: 4.5px 0;
+}
+.navbar-nav > li a,
+.navbar-nav > li img {
+  display: block;
 }
 .navbar-text {
   border-left: thin solid #eeeeee;
