@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cn">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,31 +10,62 @@
 </head>
 <body>
     <section>
-        <button type="button" class="btn btn-default" data-toggle="popover"
-            data-placement="right" data-title="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
-            data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+        <button type="button" class="btn btn-default" data-toggle="popover" data-placement="right"
+            data-title="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
             Popover on 右侧
         </button>
-        <button type="button" class="btn btn-default" data-toggle="popover"
-            data-placement="bottom" data-title="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
-            data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+        <button type="button" class="btn btn-default" data-toggle="popover" data-placement="bottom"
+            data-title="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
             Popover on 底部
         </button>
-        <button type="button" class="btn btn-default" data-toggle="popover"
-            data-placement="right" data-title="中中中中中中"
-            data-content="文文文文文文文文文文文文文文文文">
+        <button type="button" class="btn btn-default" data-toggle="popover" data-placement="right"
+            data-title="中中中中中中" data-content="文文文文文文文文文文文文文文文文">
             Popover on 右侧 中文
         </button>
-        <button type="button" class="btn btn-default"  data-toggle="popover" data-placement="right"
+        <button type="button" class="btn btn-default" data-toggle="popover" data-placement="right"
             data-content="文文文文文文文文文文文文文文文文">
             Popover on 右侧 中文 不含标题
         </button>
+    </section>
+    <section style="height:30em;">
+        <div class="popover" role="tooltip" style="display:block;">
+            <h3 class="popover-title text-center">
+                弹出框
+            </h3>
+            <div class="popover-content">
+                <div class="row">
+                    <div class="column-3">
+                        左列：
+                    </div>
+                    <div class="column-7">
+                        右列在在在在在在了了了了民民民民民民民同同同同同同同国国国国国中中虽是早民了一一于发地龚龚经红我
+                    </div>
+                </div>
+                <div class="row">
+                        <div class="column-3">
+                            左列：
+                        </div>
+                        <div class="column-7">
+                            右列在在在在在在了了了了民民民民民民民同同同同同同同国国国国国中中虽是早民了一一于发地龚龚经红我
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <section style="height:15em;">
+        <a href="#" data-toggle="tooltip" data-placement="bottom" title="S右列在在在在在在了了了了民
+        民民民民民民同同同同同同同国国国国国中中虽是早民了一一于发地龚龚经红我!">Hover over me</a>
     </section>
     <script src="../bower_components/jquery/dist/jquery.js"></script>
     <script src="../dist/js/workflow-theme.js"></script>
     <script>
         $(function() {
-            $('[data-toggle="popover"]').popover()
+            $('[data-toggle="tooltip"]').tooltip('show');
+            $('[data-toggle="popover"]').popover({
+                trigger: 'hover focus ',
+                container: 'body',
+                template: '<div class="popover" role="tooltip"><h3 class="popover-title text-center"></h3><div class="popover-content"></div></div>'
+            })
         })
     </script>
 </body>

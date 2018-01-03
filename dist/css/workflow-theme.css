@@ -1199,6 +1199,9 @@ a.bg-danger:focus {
 .row:after {
   clear: both;
 }
+.row-2 {
+  height: 50%;
+}
 .column-1 {
   width: 10%;
 }
@@ -1217,12 +1220,23 @@ a.bg-danger:focus {
 .column-6 {
   width: 60%;
 }
+.column-7 {
+  width: 70%;
+}
+.column-8 {
+  width: 80%;
+}
+.column-9 {
+  width: 90%;
+}
 .column-1,
 .column-2,
 .column-3,
 .column-4,
 .column-5,
-.column-6 {
+.column-6,
+.column-7,
+.column-8 .column-9 {
   float: left;
   padding: 0 20px 0 0;
 }
@@ -1232,12 +1246,16 @@ a.bg-danger:focus {
 .column-4:before,
 .column-5:before,
 .column-6:before,
+.column-7:before,
+.column-8 .column-9:before,
 .column-1:after,
 .column-2:after,
 .column-3:after,
 .column-4:after,
 .column-5:after,
-.column-6:after {
+.column-6:after,
+.column-7:after,
+.column-8 .column-9:after {
   content: " ";
   display: table;
 }
@@ -1246,7 +1264,9 @@ a.bg-danger:focus {
 .column-3:after,
 .column-4:after,
 .column-5:after,
-.column-6:after {
+.column-6:after,
+.column-7:after,
+.column-8 .column-9:after {
   clear: both;
 }
 .column-1:before,
@@ -1255,12 +1275,16 @@ a.bg-danger:focus {
 .column-4:before,
 .column-5:before,
 .column-6:before,
+.column-7:before,
+.column-8 .column-9:before,
 .column-1:after,
 .column-2:after,
 .column-3:after,
 .column-4:after,
 .column-5:after,
-.column-6:after {
+.column-6:after,
+.column-7:after,
+.column-8 .column-9:after {
   content: " ";
   display: table;
 }
@@ -1269,7 +1293,9 @@ a.bg-danger:focus {
 .column-3:after,
 .column-4:after,
 .column-5:after,
-.column-6:after {
+.column-6:after,
+.column-7:after,
+.column-8 .column-9:after {
   clear: both;
 }
 .column-1:last-child,
@@ -1277,11 +1303,10 @@ a.bg-danger:focus {
 .column-3:last-child,
 .column-4:last-child,
 .column-5:last-child,
-.column-6:last-child {
+.column-6:last-child,
+.column-7:last-child,
+.column-8 .column-9:last-child {
   padding: 0;
-}
-.row-2 {
-  height: 50%;
 }
 .navbar {
   position: absolute;
@@ -3514,7 +3539,6 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  word-break: keep-all;
   font-size: 14px;
   background-color: #fff;
   background-clip: padding-box;

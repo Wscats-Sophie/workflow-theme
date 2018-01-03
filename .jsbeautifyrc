@@ -1,4 +1,4 @@
 {
     "extra_liners": [""],
-    "wrap_line_length": 120
+    "wrap_line_length": 80
 }
