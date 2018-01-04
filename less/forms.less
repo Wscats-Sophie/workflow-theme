@@ -35,11 +35,14 @@ select {
         select {
             display: inline-block;
             vertical-align: middle;
-            width: 200px;
+            width: 150px;
         }
         input[type="search"] {
             margin-right: 20px;
             width: 280px;
+            @media screen and (min-width: 0) and (max-width:@screen-md-max) {
+                width: 240px;
+            }
         }
         &:first-child {
             padding: @form-group-padding 0 0 0;
