@@ -1953,11 +1953,11 @@ select > option {
 .form-inline .form-group select {
   display: inline-block;
   vertical-align: middle;
-  width: 255px;
+  width: 200px;
 }
 .form-inline .form-group input[type="search"] {
   margin-right: 20px;
-  width: 250px;
+  width: 280px;
 }
 .form-inline .form-group:first-child {
   padding: 20px 0 0 0;
@@ -3540,6 +3540,7 @@ button.close {
   max-width: 276px;
   padding: 1px;
   font-size: 14px;
+  word-break: keep-all;
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #ccc;
