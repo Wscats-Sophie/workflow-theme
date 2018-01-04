@@ -1,4 +1,4 @@
- //
+//
 // 弹出框
 //
 .popover {
@@ -10,7 +10,7 @@
     max-width: @popover-max-width;
     padding: 1px;
     font-size: @font-size-base;
-    word-break: keep-all;
+    word-break: @popover-word-bread;
     background-color: @popover-bg;
     background-clip: padding-box;
     border: 1px solid @popover-fallback-border-color;
@@ -40,9 +40,7 @@
 
 .popover-content {
     padding: 9px 14px;
-}
-
-// 箭头
+} // 箭头
 .popover>.arrow {
     &,
     &:after {
