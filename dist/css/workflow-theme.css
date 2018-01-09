@@ -4922,6 +4922,29 @@ select.selectpicker {
   width: 100%;
   float: none;
 }
+.numeric {
+  display: block;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  color: white;
+  background-color: #3280ff;
+}
+.numeric-header {
+  height: 160px;
+  padding: 40px 0;
+  font-size: 4em;
+}
+.numeric-content {
+  height: 40px;
+  font-size: 1em;
+}
+.numeric.active,
+.numeric:focus,
+.numeric:hover {
+  color: white;
+  background-color: #0061fe;
+}
 .clearfix:before,
 .clearfix:after,
 .btn-toolbar:before,
